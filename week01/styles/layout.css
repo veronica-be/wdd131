@@ -1,8 +1,20 @@
-root {
-    --padding-for: 1rem;
+:root {
+    --padding-all-1rem: 1rem;
+    --margin-h1: 2rem auto 1rem;
+    --margin-nav: 0 auto 0;
+    --padding-footer: 2rem 0 2rem;
+    --padding-nav: 1rem 0 1rem;
+    --border-nav-half-rem-top-bottom: 0.5rem auto;
     --text-color-h: white;
     --text-color-p: black;
-    --text-color-nav: black;
+    --text-color-nav: white;
+    --text-color-footer: white;
+    --color-olivegreen-5: #272b00;
+    --color-olivegreen-4: #54582f;
+    --color-olivegreen-3: #86895d;
+    --color-olivegreen-2: #bec092;
+    --color-olivegreen-1: #f8fbca;
+
 }
 
 * {
@@ -19,11 +31,20 @@ body {
 
 header {
     grid-column: 1/4;
+    background: var(--color-olivegreen-4);
+    color: var(--text-color-h);
+}
+
+header h1 {
+    margin: var(--margin-h1);
+    max-width: 85vw;
 }
 
 Nav {
-    Margin: 0 auto 2rem;
-    Max-width: 90vw;
+    Margin: var(--margin-nav);
+    border: var(--border-nav);
+    background: var(--color-olivegreen-5);
+    padding: var(--padding-nav);
 }
 
 .navigation {
@@ -31,6 +52,7 @@ Nav {
     List-style: none;
     flex-wrap: wrap;
     align-content: center;
+
 
 }
 
@@ -48,21 +70,34 @@ Nav {
 }
 
 .navigation a:hover {
-    font-weight: bold;
-    /* -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/*Fot outline the letters*/
+/* -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; */
-}
+
+/*letter-spacing*/
+
 
 .main-area {
     grid-column: 1/3;
+    background: var(--color-olivegreen-2);
+    padding: var(--padding-all-1rem);
 }
 
 .right-sidebar {
-    grid-column: 3/4
+    grid-column: 3/4;
+    background: var(--color-olivegreen-1);
+    padding: var(--padding-all-1rem);
 }
 
 footer {
     grid-column: 1/4;
     text-align: center;
+    font-weight: 600;
+    background: var(--color-olivegreen-4);
+    color: var(--text-color-footer);
+    padding: var(--padding-footer);
 }
