@@ -60,6 +60,10 @@ nav {
     flex: 1 1 auto;
 }
 
+.navigation a {
+    font-size: large;
+}
+
 .navigation a,
 .card a {
     text-decoration: none;
@@ -70,7 +74,7 @@ nav {
 
 .navigation a:hover,
 .card a:hover {
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .grid-two-60-40 {
@@ -98,14 +102,16 @@ main {
 .card {
     border-radius: 20px;
     overflow: hidden;
-    padding: 1rem 2rem 1rem;
-    display: grid;
+    padding: 0;
+    display: block;
 
 }
 
-.card p {
+.card p,
+.card ul,
+.card figure {
     text-align: justify;
-    padding: var(--padding-p);
+    padding: 0.5rem 2rem;
 
 }
 
@@ -120,6 +126,11 @@ main {
 
 .card h2 {
     text-align: center;
+    padding: 1rem 0;
+    background-color: var(--color-olivegreen-4);
+    max-width: 100%;
+    color: var(--text-color-h);
+    border-bottom: 0.3rem solid white;
 
 }
 
@@ -128,10 +139,7 @@ main {
     height: auto;
 }
 
-.colored-back-title {
 
-    background-color: yellow;
-}
 
 footer {
     text-align: center;
@@ -141,8 +149,8 @@ footer {
     padding: var(--padding-footer);
 }
 
-.padding-halve-0-1 {
-    padding: 0.5rem 0 1rem;
+.padding-halve-0-2 {
+    padding: 0.5rem 0 2rem;
 }
 
 .green-heading {
