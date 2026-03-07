@@ -15,6 +15,7 @@
     --color-olivegreen-3: #86895d;
     --color-olivegreen-2: #bec092;
     --color-olivegreen-1: #f8fbca;
+    --margin-float-right: 0.5rem 2rem 1rem 2rem;
 
 }
 
@@ -72,9 +73,13 @@ nav {
     font-weight: normal;
 }
 
-.navigation a:hover,
+.navigation a:hover {
+    text-shadow: 0.6px 0 0 var(--text-color-nav);
+}
+
 .card a:hover {
     font-weight: bold;
+    width: min-content;
 }
 
 .grid-two-60-40 {
@@ -90,9 +95,10 @@ main {
 }
 
 .main-area {
-    background: var(--color-olivegreen-2);
+    background: wheat;
     padding: var(--padding-all-1rem);
 }
+
 
 .right-sidebar {
     background: var(--color-olivegreen-1);
@@ -101,6 +107,7 @@ main {
 
 .card {
     border-radius: 20px;
+    border: 0.05rem solid var(--color-olivegreen-4);
     overflow: hidden;
     padding: 0;
     display: block;
@@ -116,14 +123,34 @@ main {
 
 }
 
+.card h3 {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+
 .card img {
     float: right;
     width: 40%;
     height: auto;
 }
 
+
 .card li {
     list-style-position: inside;
+    text-align: left;
+    padding-bottom: 0.5rem
+}
+
+.card hr {
+    margin: 0 2rem;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: auto;
+
 }
 
 .card a {
@@ -137,13 +164,14 @@ main {
     background-color: var(--color-olivegreen-4);
     max-width: 100%;
     color: var(--text-color-h);
-    border-bottom: 0.3rem solid white;
 
 }
 
-.card img {
-    width: 100%;
+.float-right {
+    width: 35%;
     height: auto;
+    float: right;
+    margin: var(--margin-float-right);
 }
 
 
@@ -166,6 +194,9 @@ footer {
 }
 
 
+.top-padding-2rem {
+    padding-top: 2rem !important;
+}
 
 /*JUst in case*/
 .outline-the-letters {
