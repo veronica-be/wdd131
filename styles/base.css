@@ -198,6 +198,13 @@ footer {
     padding-top: 2rem !important;
 }
 
+.float-left-figure img {
+    float: left;
+    position: relative;
+}
+
+.float-left-figure figurecaption {}
+
 /*JUst in case*/
 .outline-the-letters {
     -webkit-text-fill-color: transparent;
