@@ -109,10 +109,17 @@ main {
 
 .card p,
 .card ul,
-.card figure {
+.card figure,
+.card h3 {
     text-align: justify;
     padding: 0.5rem 2rem;
 
+}
+
+.card img {
+    float: right;
+    width: 40%;
+    height: auto;
 }
 
 .card li {
