@@ -2,10 +2,10 @@
     --padding-all-1rem: 1rem;
     --padding-h: 2rem 0 2rem;
     --margin-nav: 0rem 0 0;
-    --margin-main: 2rem auto 2rem;
+    --margin-main: 1rem auto 1rem;
     --padding-footer: 2rem 0 2rem;
     --padding-nav: 1rem 0 1rem;
-    --padding-p: 0.5rem 0 0.5rem;
+    --padding-p: 0rem 0 0.5rem;
     --text-color-h: white;
     --text-color-p: var(--color-olivegreen-5);
     --text-color-nav: white;
@@ -14,8 +14,9 @@
     --color-olivegreen-4: #54582f;
     --color-olivegreen-3: #86895d;
     --color-olivegreen-2: #bec092;
+    --color-olivegreen-6: #f8fbca;
     --color-olivegreen-1: #f8fbca;
-    --margin-float-right: 0.5rem 2rem 1rem 2rem;
+    --margin-float-right: 0rem 2rem 1rem 2rem;
 
 }
 
@@ -95,8 +96,9 @@ main {
 }
 
 .main-area {
-    background: wheat;
+    background: var(--color-olivegreen-6);
     padding: var(--padding-all-1rem);
+    padding-top: 0;
 }
 
 
@@ -105,26 +107,34 @@ main {
     padding: var(--padding-all-1rem);
 }
 
+.main-area,
+.right-sidebar {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--color-olivegreen-4);
+}
+
 .card {
     border-radius: 20px;
-    border: 0.05rem solid var(--color-olivegreen-4);
     overflow: hidden;
     padding: 0 0 2rem 0;
-    display: block;
-
+    display: grid;
+    grid-template-rows: min-content auto;
+    row-gap: 0.3rem;
 }
 
 .card p,
 .card ul,
-.card figure,
-.card h3 {
+.card figure {
     text-align: justify;
-    padding: 0.5rem 2rem;
+    padding: 0rem 2rem 0.5rem;
 
 }
 
 .card h3 {
-    padding-left: 3rem;
+    text-align: justify;
+    padding-left: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -194,6 +204,7 @@ footer {
 }
 
 
+
 .top-padding-2rem {
     padding-top: 2rem !important;
 }
@@ -222,13 +233,6 @@ footer {
     line-height: 1.2;
 }
 
-.grid {
-    display: grid;
-}
-
-.grid-gap-bottom-h2 {
-    grid-template-rows: auto 0;
-}
 
 /*JUst in case*/
 .outline-the-letters {
