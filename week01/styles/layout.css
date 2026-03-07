@@ -40,7 +40,7 @@ header h1 {
     max-width: 85vw;
 }
 
-Nav {
+nav {
     Margin: var(--margin-nav);
     border: var(--border-nav);
     background: var(--color-olivegreen-5);

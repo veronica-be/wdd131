@@ -1,0 +1,164 @@
+:root {
+    --padding-all-1rem: 1rem;
+    --padding-h: 2rem 0 2rem;
+    --margin-nav: 0rem 0 0;
+    --margin-main: 2rem auto 2rem;
+    --padding-footer: 2rem 0 2rem;
+    --padding-nav: 1rem 0 1rem;
+    --padding-p: 0.5rem 0 0.5rem;
+    --text-color-h: white;
+    --text-color-p: var(--color-olivegreen-5);
+    --text-color-nav: white;
+    --text-color-footer: white;
+    --color-olivegreen-5: #272b00;
+    --color-olivegreen-4: #54582f;
+    --color-olivegreen-3: #86895d;
+    --color-olivegreen-2: #bec092;
+    --color-olivegreen-1: #f8fbca;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+header {
+    background: var(--color-olivegreen-4);
+    color: var(--text-color-h);
+    text-align: center;
+
+}
+
+#course-title {
+    font-weight: 900;
+    font-size: xx-large;
+    padding: var(--padding-h);
+    display: block;
+}
+
+
+nav {
+    Margin: var(--margin-nav);
+    background: var(--color-olivegreen-5);
+    padding: var(--padding-nav);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a,
+.card a {
+    text-decoration: none;
+    color: var(--text-color-nav);
+    text-align: center;
+    font-weight: normal;
+}
+
+.navigation a:hover,
+.card a:hover {
+    font-weight: 800;
+}
+
+.grid-two-60-40 {
+    grid-template-columns: 60% 40%;
+    display: grid;
+    grid-gap: 0.5rem;
+}
+
+
+main {
+    max-width: 85vw;
+    margin: var(--margin-main);
+}
+
+.main-area {
+    background: var(--color-olivegreen-2);
+    padding: var(--padding-all-1rem);
+}
+
+.right-sidebar {
+    background: var(--color-olivegreen-1);
+    padding: var(--padding-all-1rem);
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem 2rem 1rem;
+    display: grid;
+
+}
+
+.card p {
+    text-align: justify;
+    padding: var(--padding-p);
+
+}
+
+.card li {
+    list-style-position: inside;
+}
+
+.card a {
+    color: var(--color-olivegreen-5);
+
+}
+
+.card h2 {
+    text-align: center;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.colored-back-title {
+
+    background-color: yellow;
+}
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    background: var(--color-olivegreen-4);
+    color: var(--text-color-footer);
+    padding: var(--padding-footer);
+}
+
+.padding-halve-0-1 {
+    padding: 0.5rem 0 1rem;
+}
+
+.green-heading {
+    text-align: center;
+    color: var(--color-olivegreen-5);
+}
+
+
+
+/*JUst in case*/
+.outline-the-letters {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+/*letter-spacing if needed*/
