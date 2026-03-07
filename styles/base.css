@@ -109,7 +109,7 @@ main {
     border-radius: 20px;
     border: 0.05rem solid var(--color-olivegreen-4);
     overflow: hidden;
-    padding: 0;
+    padding: 0 0 2rem 0;
     display: block;
 
 }
@@ -201,7 +201,7 @@ footer {
 
 .float-left-figure {
     float: left;
-    width: 60%;
+    width: 50%;
     margin: 2rem 0rem 0rem 0rem;
     padding: 0;
     text-align: center;
@@ -220,6 +220,14 @@ footer {
     font-style: italic;
     margin-top: 0.5rem;
     line-height: 1.2;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-gap-bottom-h2 {
+    grid-template-rows: auto 0;
 }
 
 /*JUst in case*/
