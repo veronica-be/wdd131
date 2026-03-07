@@ -198,12 +198,29 @@ footer {
     padding-top: 2rem !important;
 }
 
-.float-left-figure img {
+
+.float-left-figure {
     float: left;
-    position: relative;
+    width: 60%;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0;
+    text-align: center;
 }
 
-.float-left-figure figurecaption {}
+.float-left-figure img {
+    float: none;
+    width: 100%;
+    height: auto;
+    border: 1px solid currentColor;
+}
+
+.float-left-figure figcaption {
+    display: block;
+    font-size: normal;
+    font-style: italic;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+}
 
 /*JUst in case*/
 .outline-the-letters {
