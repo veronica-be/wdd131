@@ -26,10 +26,14 @@
     box-sizing: border-box;
 }
 
-body {
+
+
+body header,
+body footer {
     font-family: 'Times New Roman', Times, serif;
-    height: 100vh;
 }
+
+
 
 header {
     background: var(--color-olivegreen-4);
@@ -38,7 +42,7 @@ header {
 
 }
 
-#course-title {
+header span {
     font-weight: 900;
     font-size: xx-large;
     padding: var(--padding-h);
@@ -71,15 +75,16 @@ nav {
     text-decoration: none;
     color: var(--text-color-nav);
     text-align: center;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .navigation a:hover {
     text-shadow: 0.6px 0 0 var(--text-color-nav);
+    text-decoration: overline;
 }
 
 .card a:hover {
-    font-weight: bold;
+    font-weight: bolder;
     width: min-content;
 }
 
@@ -91,6 +96,7 @@ nav {
 
 
 main {
+    font-family: "Cormorant Garamond", serif;
     max-width: 85vw;
     margin: var(--margin-main);
 }
