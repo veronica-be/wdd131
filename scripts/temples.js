@@ -1,3 +1,11 @@
+/*for my copyright footer*/
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').innerHTML = currentYear;
+
+const lastModified = document.lastModified;
+document.getElementById('lastModified').innerHTML = `Last Modified: ${document.lastModified}`;
+
+/*for the nav on the mobile*/
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -5,9 +13,3 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
-
-const currentYear = new Date().getFullYear();
-document.querySelector('#currentyear').textContent = currentYear;
-
-const lastModified = document.lastModified;
-document.querySelector('#lastModified').textContent = `Last Modification: ${lastModified}`;
