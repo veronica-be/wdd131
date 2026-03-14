@@ -1,5 +1,7 @@
 @media screen and (min-width: 750px) {
 
+    /*Only the difeerences*/
+    /*Making changes to the menu based on the condition of the scren*/
     .menu {
         display: none;
     }
@@ -9,7 +11,7 @@
         flex-direction: row;
         justify-content: space-around;
         background-color: var(--color-olivegreen-5);
-        padding: var(--padding-nav);
+        padding: var(--padding-nav)
     }
 
     .navigation li {
@@ -27,12 +29,17 @@
         gap: 2rem;
     }
 
-    #temple-title {
-        font-size: 3.5rem;
+    #temple-album-title {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+
+    /*Extra changes*/
+    #h1-temples-page {
+        grid-column: 1/4;
     }
 
     figure:hover {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        transition: 0.3s ease;
     }
 }

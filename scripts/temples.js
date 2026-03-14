@@ -1,10 +1,10 @@
 /*for the nav on the mobile*/
-const hamButton = document.querySelector('.menu');
+const navButton = document.querySelector('.menu');
 const navigation = document.querySelector('.navigation');
 
-hamButton.addEventListener('click', () => {
+navButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
+    navButton.classList.toggle('open');
 });
 
 
