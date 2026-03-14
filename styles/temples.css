@@ -50,6 +50,7 @@ footer {
 
 #temple-album-title {
     flex-grow: 1;
+    flex-shrink: 1;
     text-align: center;
     font-weight: 900;
     font-size: 2rem;
@@ -145,7 +146,8 @@ figcaption {
     padding: var(--padding-all-1rem);
     background-color: var(--color-olivegreen-6);
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: larger;
     border-top: 1px solid var(--color-olivegreen-4);
 }
 
