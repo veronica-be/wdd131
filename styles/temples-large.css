@@ -2,20 +2,33 @@
 
     /*Only the difeerences*/
     /*Making changes to the menu based on the condition of the scren*/
+
+
     .menu {
         display: none;
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
     .navigation {
         display: flex !important;
-        flex-direction: row;
         justify-content: space-around;
         background-color: var(--color-olivegreen-5);
         padding: var(--padding-nav)
     }
 
+    .navigation ul,
+    .navigation ol {
+        display: flex;
+        flex-direction: row !important;
+    }
+
     .navigation li {
         flex: 1 1 auto;
+        list-style: none;
     }
 
     .navigation a {
