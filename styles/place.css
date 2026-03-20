@@ -60,20 +60,19 @@ footer {
     font-weight: normal;
 }
 
-/*aqui checar*/
-
 .stats-card,
 .weather-card {
-    background-color: var(--card-bg);
     margin: 1.5rem;
     padding: 1rem;
     box-shadow: var(--shadow);
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
+/*aqui checar*/
 .stats-card h2 {
     color: white;
     background-color: var(--blue-purpleish);
+    box-shadow: 0 4px 15px var(--blue-purpleish);
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -81,13 +80,12 @@ footer {
 .fun-facts-list {
     list-style: none;
     text-align: left;
-    display: inline-block;
     width: 100%;
 }
 
 .fun-facts-list li {
+    background-color: red;
     padding: 0.4rem 0;
     border-bottom: 1px solid #eee;
-    display: flex;
     justify-content: space-between;
 }
