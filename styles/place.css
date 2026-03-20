@@ -1,0 +1,16 @@
+:root {
+    --padding-all-1rem: 1rem;
+    --padding-h: 1rem;
+    --margin-nav: 0;
+    --margin-main: 1rem auto 1rem;
+    --padding-footer: 2rem 0 2rem;
+    --padding-nav: 1rem 0 1rem;
+    --text-color-h: white;
+    --text-color-nav: white;
+    --text-color-footer: white;
+    /*It is the color palette of The MALLORCA FLAG, since eash island has their own flag even if the are from Spain*/
+    --yellow: #FCDD09;
+    --red: #DA121A;
+    --blue-purpleish: #40104C;
+    --white: #ffffff;
+}

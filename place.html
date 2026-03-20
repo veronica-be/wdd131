@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Veronica Becerra Estrada">
-    <meta name="description" content="Know about Mallorca a small island on Spain is the balearic islands">
+    <meta name="description" content="Know about Mallorca a small island in the balearic islands of Spain ">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap">
 
     <script src="scripts/place.js" defer></script>
 
@@ -23,33 +24,45 @@
 
 <body>
     <header>
-        <h1>Palma de Mallorca, Spain</h1>
+        <h1>Mallorca, Spain</h1>
     </header>
 
     <main>
         <section class="hero">
             <picture>
-                <source srcset="images/palma-de-mallorca-large.webp" media="(min-width: 800px)">
-                <img src="images/hero-small.webp" alt="Vista panorámica del lugar" width="400" height="300">
+                <source srcset="images/palma-de-mallorca-large.webp" media="(min-width: 300px)">
+                <img src="images/palma-de-mallorca-mobile.webp"
+                    alt="The Cathedral of Palma de Mallorca, known as La Seu, at sunset." width="100%" height="auto">
             </picture>
 
             <article class="stats-card">
-                <h2>Datos</h2>
-                <ul class="label-value-list">
-                    <li><span class="label">Etiqueta:</span> <span class="value">Valor</span></li>
-                    <li><span class="label">Etiqueta:</span> <span class="value">Valor</span></li>
-                    <li><span class="label">Etiqueta:</span> <span class="value">Valor</span></li>
+                <h2>Data</h2>
+                <ul class="fun-facts-list">
+                    <li><span class="label">Area:</span> <span id="area">Valor</span></li>
+                    <li><span class="label">Population:</span> <span id="population">Valor</span></li>
+                    <li><span class="label">Capital:</span> <span id="capital">Valor</span></li>
+                    <li><span class="label">Languages:</span> <span id="languages">Valor</span></li>
+                    <li><span class="label">Currency:</span> <span id="currency">Valor</span></li>
+                    <li><span class="label">Time Zone:</span> <span id="timeZone">Valor</span></li>
+                    <li><span class="label">Calling Code:</span> <span id="callCode">Valor</span></li>
+                    <li><span class="label">Internet TLD:</span> <span id="internetTLD">Valor</span></li>
                 </ul>
             </article>
 
             <article class="weather-card">
-                <h2>Clima</h2>
-                <div class="weather-info">
-                    <img src="images/weather-icon.svg" alt="Icono de clima" class="icon">
-                    <ul class="label-value-list">
-                        <li><span class="label">Temp:</span> <span class="value">25°C</span></li>
-                        <li><span class="label">Condición:</span> <span class="value">Soleado</span></li>
-                    </ul>
+                <h2>Weather</h2>
+                <picture class="weather-info">
+                    <source srcset="images/weather-icon.svg" media="(min-width: 300px)">
+                    <img src="images/weather-icon.svg" alt="A Weather Icon" class="icon">
+                </picture>
+
+
+                <ul class="fun-facts-list">
+                    <li><span class="label">Temperature:</span> <span id="temperature"></span></li>
+                    <li><span class="label">Conditions:</span> <span id="conditions"></span></li>
+                    <li><span class="label">Wind:</span> <span id="wind"></span></li>
+                    <li><span class="label">Wind Chill:</span> <span id="windChill"></span></li>
+                </ul>
                 </div>
             </article>
         </section>
