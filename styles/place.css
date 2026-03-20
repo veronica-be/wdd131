@@ -1,16 +1,93 @@
 :root {
     --padding-all-1rem: 1rem;
     --padding-h: 1rem;
-    --margin-nav: 0;
-    --margin-main: 1rem auto 1rem;
     --padding-footer: 2rem 0 2rem;
-    --padding-nav: 1rem 0 1rem;
-    --text-color-h: white;
-    --text-color-nav: white;
-    --text-color-footer: white;
+    --text-color-body: white;
+    --text-header: var(--blue-purpleish);
+    --text-body: var(--blue-purpleish);
+    --text-footer: var(--blue-purpleish);
     /*It is the color palette of The MALLORCA FLAG, since eash island has their own flag even if the are from Spain*/
     --yellow: #FCDD09;
     --red: #DA121A;
     --blue-purpleish: #40104C;
     --white: #ffffff;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: var(--text-body);
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+}
+
+header {
+    background-color: var(--yellow);
+    color: var(--text-header);
+    padding: 1.5rem;
+    border-bottom: 0.5rem solid var(--red);
+    font-size: larger;
+}
+
+footer {
+    background-color: var(--yellow);
+    color: var(--text-footer);
+    padding: 1.5rem;
+    border-top: 0.5rem solid var(--red);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.label span {
+    font-weight: normal;
+}
+
+/*aqui checar*/
+
+.stats-card,
+.weather-card {
+    background-color: var(--card-bg);
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+.stats-card h2 {
+    color: white;
+    background-color: var(--blue-purpleish);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.fun-facts-list {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+}
+
+.fun-facts-list li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
 }

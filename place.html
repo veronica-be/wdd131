@@ -28,33 +28,35 @@
     </header>
 
     <main>
-        <section class="hero">
-            <picture>
-                <source srcset="images/palma-de-mallorca-large.webp" media="(min-width: 300px)">
-                <img src="images/palma-de-mallorca-mobile.webp"
-                    alt="The Cathedral of Palma de Mallorca, known as La Seu, at sunset." width="100%" height="auto">
-            </picture>
+        <picture class="hero-image">
+            <source srcset="images/palma-de-mallorca-mobile.webp" media="(max-width: 750px)">
+            <img src="images/palma-de-mallorca-large.webp"
+                alt="The Cathedral of Palma de Mallorca, known as La Seu, at sunset.">
+        </picture>
 
+        <section>
             <article class="stats-card">
                 <h2>Data</h2>
                 <ul class="fun-facts-list">
-                    <li><span class="label">Area:</span> <span id="area">Valor</span></li>
-                    <li><span class="label">Population:</span> <span id="population">Valor</span></li>
-                    <li><span class="label">Capital:</span> <span id="capital">Valor</span></li>
-                    <li><span class="label">Languages:</span> <span id="languages">Valor</span></li>
-                    <li><span class="label">Currency:</span> <span id="currency">Valor</span></li>
-                    <li><span class="label">Time Zone:</span> <span id="timeZone">Valor</span></li>
-                    <li><span class="label">Calling Code:</span> <span id="callCode">Valor</span></li>
-                    <li><span class="label">Internet TLD:</span> <span id="internetTLD">Valor</span></li>
+                    <li class="label">Area: <span id="area">Valor</span></li>
+                    <li class="label">Population: <span id="population">Valor</span></li>
+                    <li class="label">Capital: <span id="capital">Valor</span></li>
+                    <li class="label">Languages: <span id="languages">Valor</span></li>
+                    <li class="label">Currency: <span id="currency">Valor</span></li>
+                    <li class="label">Time Zone: <span id="timeZone">Valor</span></li>
+                    <li class="label">Calling Code: <span id="callCode">Valor</span></li>
+                    <li class="label">Internet TLD: <span id="internetTLD">Valor</span></li>
                 </ul>
             </article>
 
-            <article class="weather-card">
+            <article class="stats-card">
                 <h2>Weather</h2>
-                <picture class="weather-info">
-                    <source srcset="images/weather-icon.svg" media="(min-width: 300px)">
-                    <img src="images/weather-icon-2.svg" alt="A Weather Icon" class="icon">
-                </picture>
+                <div class="weather-icon">
+                    <picture>
+                        <source srcset="images/weather-icon.svg" media="(min-width: 600px)">
+                        <img src="images/weather-icon-2.svg" alt="A Weather Icon" class="icon">
+                    </picture>
+                </div>
 
 
                 <ul class="fun-facts-list">
@@ -63,7 +65,6 @@
                     <li><span class="label">Wind:</span> <span id="wind"></span></li>
                     <li><span class="label">Wind Chill:</span> <span id="windChill"></span></li>
                 </ul>
-                </div>
             </article>
         </section>
     </main>
