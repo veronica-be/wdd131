@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Veronica Becerra Estrada">
+    <meta name="description" content="Know about Mallorca a small island on Spain is the balearic islands">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+
+    <script src="scripts/place.js" defer></script>
+
+    <title>Mallorca, Spain</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Palma de Mallorca, Spain</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/palma-de-mallorca-large.webp" media="(min-width: 800px)">
+                <img src="images/hero-small.webp" alt="Vista panorámica del lugar" width="400" height="300">
+            </picture>
+
+            <article class="stats-card">
+                <h2>Datos</h2>
+                <ul class="label-value-list">
+                    <li><span class="label">Etiqueta:</span> <span class="value">Valor</span></li>
+                    <li><span class="label">Etiqueta:</span> <span class="value">Valor</span></li>
+                    <li><span class="label">Etiqueta:</span> <span class="value">Valor</span></li>
+                </ul>
+            </article>
+
+            <article class="weather-card">
+                <h2>Clima</h2>
+                <div class="weather-info">
+                    <img src="images/weather-icon.svg" alt="Icono de clima" class="icon">
+                    <ul class="label-value-list">
+                        <li><span class="label">Temp:</span> <span class="value">25°C</span></li>
+                        <li><span class="label">Condición:</span> <span class="value">Soleado</span></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Veronica Becerra Estrada | Palma de Mallorca , Spain</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
