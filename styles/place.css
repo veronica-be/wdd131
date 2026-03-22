@@ -47,7 +47,8 @@ footer {
     border-top: 0.5rem solid var(--red);
 }
 
-.hero-img {
+source,
+img {
     width: 100%;
     height: auto;
 }
