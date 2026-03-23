@@ -68,6 +68,7 @@ img {
 
 .label {
     font-weight: bold;
+    text-align: right;
 }
 
 .label span {
@@ -75,7 +76,7 @@ img {
 }
 
 .stats-card {
-    padding: 1rem;
+    padding: var(--padding-all-1rem);
     box-shadow: var(--shadow);
     border-radius: 20px;
 }
@@ -102,11 +103,6 @@ img {
     text-align: left;
 
 }
-
-.label {
-    text-align: right;
-}
-
 
 .weather-icon {
     width: 40%;
