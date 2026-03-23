@@ -24,6 +24,12 @@ body {
     font-family: 'Montserrat';
     color: var(--text-body);
     text-align: center;
+    background-color: var(--yellow);
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
 }
 
 h1,
@@ -47,10 +53,18 @@ footer {
     border-top: 0.5rem solid var(--red);
 }
 
+.data-card {
+    margin-bottom: 1.5rem;
+}
+
 source,
 img {
     width: 100%;
     height: auto;
+}
+
+.hero {
+    display: block;
 }
 
 .label {
@@ -62,7 +76,6 @@ img {
 }
 
 .stats-card {
-    margin: 1.5rem;
     padding: 1rem;
     box-shadow: var(--shadow);
     border-radius: 20px;

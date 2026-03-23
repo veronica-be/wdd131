@@ -10,6 +10,10 @@
         display: block;
     }
 
+    section {
+        padding: 0;
+    }
+
     .stats-card {
         position: absolute;
         background-color: rgba(255, 255, 255, 0.8);
@@ -61,4 +65,10 @@
         height: auto;
         padding: 0;
     }
+
+    footer {
+        height: 100%;
+    }
+
+
 }
