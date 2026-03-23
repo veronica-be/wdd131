@@ -16,9 +16,14 @@
     .stats-card {
         position: absolute;
         background-color: rgba(255, 255, 255, 0.8);
-        box-shadow: var(--shadow);
         border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: none;
     }
+
+    .stats-card:hover {
+        box-shadow: var(--shadow);
+    }
+
 
     .stats-card h2 {
         position: absolute;
@@ -67,12 +72,18 @@
         display: none;
     }
 
-    .not-show-large {
-        display: inline;
-        padding-left: 0.5rem;
+    .weather-card h2::after {
+        content: "";
+        display: inline-block;
+        width: 27px;
+        height: 18px;
+        background-image: url('../images/weather-icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .weather-icon img {
+
+    .weather-icon {
         width: 2rem;
         height: auto;
         padding: 0;
