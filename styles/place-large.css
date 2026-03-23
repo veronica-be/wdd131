@@ -3,7 +3,6 @@
     main {
         position: relative;
         display: block;
-        width: 100%;
     }
 
     main>picture img {
@@ -77,10 +76,6 @@
         width: 2rem;
         height: auto;
         padding: 0;
-    }
-
-    footer {
-        height: 100%;
     }
 
 
