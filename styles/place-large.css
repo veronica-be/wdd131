@@ -1,43 +1,64 @@
 @media (min-width: 750px) {
-    .hero {
+
+    main {
         position: relative;
+        display: block;
+        width: 100%;
+    }
+
+    main>picture img {
         display: block;
     }
 
     .stats-card {
         position: absolute;
-        top: 50px;
-        left: 50px;
-        width: 300px;
-        margin: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .fun-facts-list li {
+        border-bottom: 0;
+        grid-template-columns: 55% 45%;
+
+    }
+
+    .weather-card,
+    .data-card {
+        position: absolute;
     }
 
     .weather-card {
-        position: absolute;
-        bottom: 50px;
-        right: 50px;
-        width: 280px;
+        bottom: 3%;
+        right: 3%;
+        width: 29.5%;
         margin: 0;
     }
 
-
-    .weather-info picture {
-        display: none;
-    }
-
-    .weather-card h2::after {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-image: url('../images/weather-icon.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        vertical-align: middle;
-        margin-left: 15px;
+    .data-card {
+        top: 1%;
+        left: 3%;
+        height: auto;
+        margin: 0;
+        width: 40%;
     }
 
     header {
         font-size: 1.5rem;
+    }
+
+    .not-show-small {
+        display: none;
+    }
+
+    .not-show-large {
+        display: inline;
+        padding-left: 0.5rem;
+    }
+
+    .weather-icon img {
+        width: 2rem;
+        height: auto;
+        padding: 0;
     }
 }

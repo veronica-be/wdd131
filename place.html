@@ -35,7 +35,7 @@
         </picture>
 
         <section>
-            <article class="stats-card">
+            <article class="stats-card data-card">
                 <h2>Data</h2>
                 <ul class="fun-facts-list">
                     <li><span class="label">Area:</span> <span id="area">Valor</span></li>
@@ -49,21 +49,26 @@
                 </ul>
             </article>
 
-            <article class="stats-card">
-                <h2>Weather</h2>
-                <div class="weather-icon">
-                    <picture>
-                        <source srcset="images/weather-icon.svg" media="(min-width: 600px)">
+            <article class="stats-card weather-card">
+
+                <div>
+                    <h2 class="h2-of-weather">Weather <picture class="weather-icon not-show-large">
+                            <source srcset="images/weather-icon.svg" media="(min-width: 750px)">
+                            <img src="images/weather-icon-2.svg" alt="A Weather Icon" class="icon">
+                        </picture>
+                    </h2>
+                    <picture class="weather-icon not-show-small">
+                        <source srcset="images/weather-icon.svg" media="(min-width: 750px)">
                         <img src="images/weather-icon-2.svg" alt="A Weather Icon" class="icon">
                     </picture>
                 </div>
 
 
                 <ul class="fun-facts-list">
-                    <li><span class="label">Temperature:</span> <span id="temperature">X</span></li>
-                    <li><span class="label">Conditions:</span> <span id="conditions">X</span></li>
-                    <li><span class="label">Wind:</span> <span id="wind">X</span></li>
-                    <li><span class="label">Wind Chill:</span> <span id="windChill">X</span></li>
+                    <li><span class="label">Temperature:</span> <span id="temperature"></span></li>
+                    <li><span class="label">Conditions:</span> <span id="conditions"></span></li>
+                    <li><span class="label">Wind:</span> <span id="wind"></span></li>
+                    <li><span class="label">Wind Chill:</span> <span id="windChill"></span></li>
                 </ul>
             </article>
         </section>
@@ -71,7 +76,7 @@
 
     <footer>
         <p>&copy; <span id="year"></span> | Veronica Becerra Estrada | Palma de Mallorca , Spain</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <p><span id="lastModified"></span></p>
     </footer>
 
 </body>

@@ -68,23 +68,41 @@ img {
     border-radius: 20px;
 }
 
-/*aqui checar*/
 .stats-card h2 {
     color: white;
     background-color: var(--blue-purpleish);
     box-shadow: 0 4px 15px var(--blue-purpleish);
+    border-radius: 50px;
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .fun-facts-list {
     list-style: none;
-    text-align: left;
-    width: 100%;
 }
 
 .fun-facts-list li {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0.7rem;
     padding: 0.4rem 0;
     border-bottom: 1px solid #eeee;
-    justify-content: space-between;
+    text-align: left;
+
+}
+
+.label {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+.not-show-large {
+    display: none;
+}
+
+.weather-icon img {
+    width: 40%;
+    height: auto;
+    padding: 0.7rem;
+
 }
