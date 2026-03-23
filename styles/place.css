@@ -27,7 +27,7 @@ body {
     background-color: var(--yellow);
 }
 
-section {
+div {
     background-color: white;
     padding: 1.5rem;
 }
