@@ -11,7 +11,7 @@
     --red: #DA121A;
     --blue-purpleish: #40104C;
     --white: #ffffff;
-    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -106,7 +106,6 @@ img {
 
 .label {
     text-align: right;
-    padding-right: 0.5rem;
 }
 
 .not-show-large {

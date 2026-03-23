@@ -21,10 +21,21 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
+    .stats-card h2 {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        padding: 10px 20px;
+
+    }
+
     .fun-facts-list li {
         border-bottom: 0;
-        grid-template-columns: 55% 45%;
+        grid-template-columns: 50% 50%;
+    }
 
+    .fun-facts-list {
+        padding-top: 1rem;
     }
 
     .weather-card,
@@ -32,15 +43,17 @@
         position: absolute;
     }
 
+
+
     .weather-card {
         bottom: 3%;
         right: 3%;
-        width: 29.5%;
+        width: 33%;
         margin: 0;
     }
 
     .data-card {
-        top: 1%;
+        top: 5.2%;
         left: 3%;
         height: auto;
         margin: 0;
