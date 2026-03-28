@@ -2,7 +2,7 @@
     --padding-all-1rem: 1rem;
     --padding-h: 1rem;
     --margin-nav: 0;
-    --margin-main: 1rem auto 1rem;
+    --margin-main: 1rem auto 2rem;
     --padding-footer: 2rem 0 2rem;
     --padding-nav: 1rem 0 1rem;
     --text-color-h: white;
@@ -121,7 +121,13 @@ h2 {
 }
 
 h1 {
-    padding: var(--padding-all-1rem);
+    padding: 2rem 0 0.5rem 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: larger;
+    padding-bottom: 1rem;
 }
 
 main {

@@ -100,11 +100,13 @@ const mainElement = document.getElementById("main");
 
 function templeCards(temples) {
     mainElement.innerHTML = "";
-    const titleOfPage = document.createElement("div");
+    const titleOfPage = document.createElement("h1");
     titleOfPage.innerHTML = `
-    <h1>${h1Name}</h1>
-    <h2>${h2Name}</h2>`
+    ${h1Name}`
+    const h2OfPage = document.createElement("h2");
+    h2OfPage.innerHTML = `<h2>${h2Name}</h2>`
     mainElement.appendChild(titleOfPage);
+    mainElement.appendChild(h2OfPage);
 
     temples.forEach(temples => {
         const card = document.createElement("figure")
