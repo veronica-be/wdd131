@@ -119,9 +119,9 @@ function templeCards(temples) {
             <img 
                 src="${temple.imageUrl}" 
                 alt="${temple.templeName} Temple" 
-                ${loading}
                 width="100%"
                 height="auto"
+                ${loading}
             >
             <figcaption>
             <h3>${temple.templeName}</h3>
