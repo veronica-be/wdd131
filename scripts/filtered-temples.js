@@ -110,7 +110,7 @@ function templeCards(temples) {
 
     temples.forEach(temples => {
         const card = document.createElement("figure");
-        const loading = index < 3 ? 'fetchpriority="high"' : 'loading="lazy"';
+        const loading = index < 3 ? 'fetchpriority="high"' : 'loading="lazy"'
         card.innerHTML = `
             <img 
                 src="${temples.imageUrl}" 
