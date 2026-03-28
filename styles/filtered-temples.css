@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: "Times New Roman", serif;
+    font-family: 'Arial Narrow Bold', sans-serif serif;
     background-color: var(--color-olivegreen-1);
     color: var(--color-olivegreen-5);
 }
