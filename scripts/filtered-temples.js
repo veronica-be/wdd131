@@ -24,7 +24,7 @@ const temples = [
         dedicated: "1888, May, 21",
         area: 74792,
         imageUrl:
-            "https://www.robertaboyd.com/images/thumbs/0004667_manti-temple-a-house-of-peace_625.jpeg"
+            "/images/manti_utah_temple.webp"
     },
 
     {
