@@ -108,6 +108,9 @@ nav {
     text-decoration: overline;
 }
 
+.navigation a:active {
+    text-decoration: none;
+}
 
 /*Main*/
 
