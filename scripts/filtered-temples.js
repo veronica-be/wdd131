@@ -16,7 +16,7 @@ const temples = [
         dedicated: "2005, August, 7",
         area: 11500,
         imageUrl:
-            "https://nigerianheritage.ng/img/tours/68779629aefae_aa5.webp"
+            "images/aba-nigeria-temple.jpg"
     },
     {
         templeName: "Manti Utah",
