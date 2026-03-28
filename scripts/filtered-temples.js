@@ -24,8 +24,9 @@ const temples = [
         dedicated: "1888, May, 21",
         area: 74792,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+            "https://www.manti.gov/sites/g/files/vyhlif12276/files/styles/embedded_pages_buttons/public/media/historicpreservation/image/5636/manti_utah_temple-2.jpg.webp?itok=M94vvf9a"
     },
+
     {
         templeName: "Payson Utah",
         location: "Payson, Utah, United States",
@@ -119,8 +120,8 @@ function templeCards(temples) {
             <img 
                 src="${temple.imageUrl}" 
                 alt="${temple.templeName} Temple" 
-                width="500px"
-                height="auto"
+                width="500"
+                height="300"
                 ${loading}
             >
             <figcaption>
