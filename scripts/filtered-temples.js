@@ -24,7 +24,7 @@ const temples = [
         dedicated: "1888, May, 21",
         area: 74792,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+            "https://www.robertaboyd.com/images/thumbs/0004667_manti-temple-a-house-of-peace_625.jpeg"
     },
 
     {
