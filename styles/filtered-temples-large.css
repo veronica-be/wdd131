@@ -1,0 +1,58 @@
+@media screen and (min-width: 750px) {
+
+    /*Only the difeerences*/
+    /*Making changes to the menu based on the condition of the scren*/
+
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation {
+        display: flex !important;
+        justify-content: space-around;
+        background-color: var(--color-olivegreen-5);
+        padding: var(--padding-nav)
+    }
+
+    .navigation ul,
+    .navigation ol {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+        list-style: none;
+    }
+
+    .navigation a {
+        border-top: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 85vw;
+        gap: 2rem;
+    }
+
+    #temple-album-title {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+
+    /*Extra changes*/
+    #h1-temples-page {
+        grid-column: 1/4;
+    }
+
+    figure:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}

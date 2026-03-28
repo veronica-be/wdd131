@@ -1,0 +1,159 @@
+:root {
+    --padding-all-1rem: 1rem;
+    --padding-h: 1rem;
+    --margin-nav: 0;
+    --margin-main: 1rem auto 1rem;
+    --padding-footer: 2rem 0 2rem;
+    --padding-nav: 1rem 0 1rem;
+    --text-color-h: white;
+    --text-color-nav: white;
+    --text-color-footer: white;
+    /*It is a olivegren color palette for all my pages*/
+    --color-olivegreen-5: #272b00;
+    --color-olivegreen-4: #54582f;
+    --color-olivegreen-3: #86895d;
+    --color-olivegreen-2: #bec092;
+    --color-olivegreen-1: #f8fbca;
+    --color-olivegreen-6: #f8fbca;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: var(--color-olivegreen-1);
+    color: var(--color-olivegreen-5);
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+/* Header*/
+
+header,
+footer {
+    background-color: var(--color-olivegreen-4);
+    color: var(--text-color-h);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#temple-album-title {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: var(--padding-h);
+    display: block;
+    line-height: 0px;
+}
+
+nav {
+    margin: var(--margin-nav);
+    background-color: var(--color-olivegreen-5);
+    flex-basis: 100%;
+}
+
+/* Header classes that affect it*/
+.menu {
+    display: flex;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.7rem;
+    background: var(--color-olivegreen-5);
+    color: var(--text-color-nav);
+}
+
+.menu::before {
+    content: "☰";
+}
+
+.menu.open::before {
+    content: "✕";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: var(--padding-all-1rem);
+    color: var(--text-color-nav);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    border-top: 1px solid var(--color-olivegreen-4);
+}
+
+.navigation a:hover {
+    text-shadow: 0.6px 0 0 var(--text-color-nav);
+    text-decoration: overline;
+}
+
+
+/*Main*/
+
+main h1 {
+    text-align: center;
+    padding: var(--padding-all-1rem);
+    color: var(--color-olivegreen-5);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-all-1rem);
+    max-width: 90vw;
+    margin: var(--margin-main);
+}
+
+
+
+figure {
+    background: white;
+    border: 1px solid var(--color-olivegreen-4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: var(--padding-all-1rem);
+    background-color: var(--color-olivegreen-6);
+    text-align: center;
+    font-weight: normal;
+    font-size: larger;
+    border-top: 1px solid var(--color-olivegreen-4);
+}
+
+
+/* Footer*/
+footer {
+    padding: var(--padding-footer);
+    font-weight: 600;
+}
