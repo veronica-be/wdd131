@@ -114,10 +114,7 @@ function templeCards(temples) {
         const firstElement = temples[0];
         const secondElement = temples[1];
         const thirdElement = temples[2];
-        const index1 = temples.indexOf(firstElement);
-        const index2 = temples.indexOf(secondElement);
-        const index3 = temples.indexOf(thirdElement);
-        const loading = (index1 || index2 || index3) ? 'fetchpriority="high"' : 'loading="lazy"'
+        const loading = (firstElement || secondElement || thirdElement) ? 'fetchpriority="high"' : 'loading="lazy"'
         card.innerHTML = `
             <img 
                 src="${temples.imageUrl}" 
