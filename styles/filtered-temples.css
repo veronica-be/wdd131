@@ -135,6 +135,7 @@ main {
     grid-template-columns: 1fr;
     gap: var(--padding-all-1rem);
     max-width: 90vw;
+    min-height: 80vh;
     margin: var(--margin-main);
 }
 
@@ -148,12 +149,9 @@ figure {
     border-bottom-right-radius: 9px;
 }
 
-img {
-    aspect-ratio: auto 640 / 360;
-}
-
 figure img {
     width: 100%;
+    aspect-ratio: auto 640 / 360;
     height: auto;
     display: block;
 }
