@@ -116,6 +116,8 @@ function templeCards(temples) {
         card.innerHTML = `
             <img 
                 src="${temple.imageUrl}" 
+                width= "640"
+                height= "360"
                 alt="${temple.templeName} Temple" 
                 ${loading}
             >
