@@ -72,7 +72,7 @@ const temples = [
         dedicated: "2019, March, 10",
         area: 41010,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+            "https://www.churchofjesuschrist.org/imgs/17e2c70d687fffedfe115197e57fa8f5d1d369bb/full/800%2C/0/default"
     },
     {
         templeName: "Hong Kong China",
@@ -80,7 +80,7 @@ const temples = [
         dedicated: "1996, May, 26",
         area: 51921,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-28125-main.jpg"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQG5YByGVq52uvid0UZ7OOVSGv2bIVVA3evw&s"
     },
     {
         templeName: "Seoul Korea",
@@ -88,7 +88,7 @@ const temples = [
         dedicated: "1985, December, 14",
         area: 28057,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/seoul-korea-temple/seoul-korea-temple-22305-main.jpg"
+            "https://www.churchofjesuschrist.org/imgs/57efcc4b6a1c664c934aa672b0f8de38a8f539c4/full/800%2C/0/default?lang=eng"
     },
 
 ];
