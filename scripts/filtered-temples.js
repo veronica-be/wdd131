@@ -94,11 +94,12 @@ const temples = [
 ];
 
 /* MAKING CARDS */
-let h1Name = "Home";
-let h2Name = "";
-const mainElement = document.getElementById("main");
+
 
 function templeCards(temples) {
+    let h1Name = "Home";
+    let h2Name = "";
+    const mainElement = document.getElementById("main");
     mainElement.innerHTML = "";
     const titleOfPage = document.createElement("h1");
     titleOfPage.innerHTML = `
