@@ -109,13 +109,14 @@ function templeCards(temples) {
     mainElement.appendChild(h2OfPage);
 
     temples.forEach(temples => {
-        const card = document.createElement("figure")
+        const card = document.createElement("figure");
+        const isFirstCard = index === 0;
         card.innerHTML = `
             <img 
                 src="${temples.imageUrl}" 
                 alt="${temples.templeName} Temple" 
-                loading="lazy" 
-                width="400" 
+                ${isFirstCard ? 'fetchpriority="high"' : 'loading="lazy"'}
+                width="100%"
                 height="auto"
             >
             <figcaption>
