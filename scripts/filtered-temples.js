@@ -119,7 +119,7 @@ function templeCards(temples) {
             <img 
                 src="${temple.imageUrl}" 
                 alt="${temple.templeName} Temple" 
-                width="100%"
+                width="500px"
                 height="auto"
                 ${loading}
             >
