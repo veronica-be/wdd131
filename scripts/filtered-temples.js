@@ -49,7 +49,7 @@ const temples = [
         dedicated: "1974, November, 19",
         area: 156558,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+            "https://dctemple.org/wp-content/uploads/2021/12/Washington-DC-Temple1-1.webp"
     },
     {
         templeName: "Lima Perú",
