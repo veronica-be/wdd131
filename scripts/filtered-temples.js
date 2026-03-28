@@ -24,7 +24,7 @@ const temples = [
         dedicated: "1888, May, 21",
         area: 74792,
         imageUrl:
-            "/images/manti_utah_temple.webp"
+            "images/manti_utah_temple.webp"
     },
 
     {
