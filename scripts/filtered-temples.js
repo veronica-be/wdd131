@@ -109,7 +109,7 @@ function templeCards(temples) {
     mainElement.appendChild(titleOfPage);
     mainElement.appendChild(h2OfPage);
 
-    temples.forEach(temples => {
+    temples.forEach(temple => {
         const card = document.createElement("figure");
         const firstElement = temples[0];
         const secondElement = temples[1];
@@ -117,18 +117,18 @@ function templeCards(temples) {
         const loading = (firstElement || secondElement || thirdElement) ? 'fetchpriority="high"' : 'loading="lazy"'
         card.innerHTML = `
             <img 
-                src="${temples.imageUrl}" 
-                alt="${temples.templeName} Temple" 
+                src="${temple.imageUrl}" 
+                alt="${temple.templeName} Temple" 
                 ${loading}
                 width="100%"
                 height="auto"
             >
             <figcaption>
-            <h3>${temples.templeName}</h3>
+            <h3>${temple.templeName}</h3>
             <div class="fig-grid">
-            <p class="label">Location:</p> <p>${temples.location}</p>
-            <p class="label">Dedicated:</p> <p>${temples.dedicated}</p>
-            <p class="label">Area:</p> <p>${temples.area.toLocaleString()} sq ft</p>
+            <p class="label">Location:</p> <p>${temple.location}</p>
+            <p class="label">Dedicated:</p> <p>${temple.dedicated}</p>
+            <p class="label">Area:</p> <p>${temple.area.toLocaleString()} sq ft</p>
             </div>
             </figcaption>
     `;
