@@ -94,32 +94,84 @@ const temples = [
 ];
 
 /* MAKING CARDS */
-const mainElement = document.querySelector("main");
+let h1Name = "Home";
+let h2Name = "";
+const mainElement = document.getElementById("main");
 
-temples.forEach(temple => {
-    const card = document.createElement(figure)
-    card.innerHTML = `
+function templeCards(temples) {
+    mainElement.innerHTML = "";
+    const titleOfPage = document.createElement("div");
+    titleOfPage.innerHTML = `
+    <h1>${h1Name}</h1>
+    <h2>${h2Name}</h2>`
+    mainElement.appendChild(titleOfPage);
+
+    temples.forEach(temples => {
+        const card = document.createElement("figure")
+        card.innerHTML = `
             <img 
-                src="${temple.imageUrl}" 
-                alt="${temple.templeName} Temple" 
+                src="${temples.imageUrl}" 
+                alt="${temples.templeName} Temple" 
                 loading="lazy" 
                 width="400" 
                 height="auto"
             >
             <figcaption>
             <h3>${temples.templeName}</h3>
-            <p><span class="label">Location:</span> ${temple.location}</p>
-            <p><span class="label">Dedicated:</span> ${temple.dedicated}</p>
-            <p><span class="label">Area:</span> ${temple.area.toLocaleString()} sq ft</p>
+            <p><span class="label">Location:</span> ${temples.location}</p>
+            <p><span class="label">Dedicated:</span> ${temples.dedicated}</p>
+            <p><span class="label">Area:</span> ${temples.area.toLocaleString()} sq ft</p>
             </figcaption>
     `;
-    mainElement.appendChild(card);
+        mainElement.appendChild(card);
+    });
+};
+
+templeCards(temples);
+
+
+const homeAllTemple = document.querySelector("#home");
+
+homeAllTemple.addEventListener("click", () => {
+    h1Name = "Home";
+    h2Name = "";
+    templeCards(temples);
 });
 
-<figure>
-    <img src="images/rome-temple.webp" alt="Rome, Italy, Temple at summer evening ">
-        <figcaption>Rome Italy Temple</figcaption>
-</figure>
+const oldTempleOnly = document.querySelector("#old");
+
+oldTempleOnly.addEventListener("click", () => {
+    h1Name = "Old";
+    h2Name = "Temples built before 1900";
+    let oldTemples = temples.filter(temple => Number(temple.dedicated.slice(0, 4)) < 1900); templeCards(oldTemples);
+});
+
+const newTempleOnly = document.querySelector("#new");
+
+newTempleOnly.addEventListener("click", () => {
+    h1Name = "New";
+    h2Name = "Temples built after 2000";
+    let newTemples = temples.filter(temple => Number(temple.dedicated.slice(0, 4)) > 2000);
+    templeCards(newTemples);
+});
+
+const largeTempleOnly = document.querySelector("#large");
+
+largeTempleOnly.addEventListener("click", () => {
+    h1Name = "Large";
+    h2Name = "temples larger than 90,000 square feet";
+    let largeTemples = temples.filter(temple => temple.area > 90000);
+    templeCards(largeTemples);
+});
+
+const smallTempleOnly = document.querySelector("#small");
+
+smallTempleOnly.addEventListener("click", () => {
+    h1Name = "Small";
+    h2Name = "Temples smaller than 10,000 square feet";
+    let smallTemples = temples.filter(temple => temple.area < 10000);
+    templeCards(smallTemples);
+});
 
 
 /*for my copyright footer*/

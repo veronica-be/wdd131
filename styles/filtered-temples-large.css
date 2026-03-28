@@ -48,7 +48,7 @@
     }
 
     /*Extra changes*/
-    #h1-temples-page {
+    div {
         grid-column: 1/4;
     }
 

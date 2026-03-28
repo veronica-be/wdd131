@@ -111,10 +111,14 @@ nav {
 
 /*Main*/
 
-main h1 {
+h1,
+h2 {
     text-align: center;
-    padding: var(--padding-all-1rem);
     color: var(--color-olivegreen-5);
+}
+
+h1 {
+    padding: var(--padding-all-1rem);
 }
 
 main {
