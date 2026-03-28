@@ -16,7 +16,7 @@ const temples = [
         dedicated: "2005, August, 7",
         area: 11500,
         imageUrl:
-            "https://franktalknow.com/wp-content/uploads/2022/10/TCKk9kpTURBXy8zNGEwMDgzNWRhNzZmNTY5NWM0ZDNlNDk2OTMzMDA3My5qcGeSlQMCHc0DHs0BwpMFzQMWzQGu3gABoTAF.webp"
+            "https://nigerianheritage.ng/img/tours/68779629aefae_aa5.webp"
     },
     {
         templeName: "Manti Utah",
