@@ -104,7 +104,7 @@ function templeCards(temples) {
     titleOfPage.innerHTML = `
     ${h1Name}`
     const h2OfPage = document.createElement("h2");
-    h2OfPage.innerHTML = `<h2>${h2Name}</h2>`
+    h2OfPage.innerHTML = `${h2Name}`
     mainElement.appendChild(titleOfPage);
     mainElement.appendChild(h2OfPage);
 
@@ -124,6 +124,7 @@ function templeCards(temples) {
             <p class="label">Location:</p> <p>${temples.location}</p>
             <p class="label">Dedicated:</p> <p>${temples.dedicated}</p>
             <p class="label">Area:</p> <p>${temples.area.toLocaleString()} sq ft</p>
+            </div>
             </figcaption>
     `;
         mainElement.appendChild(card);
