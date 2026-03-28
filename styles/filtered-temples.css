@@ -132,7 +132,6 @@ main {
 
 
 figure {
-    background: white;
     border: 1px solid var(--color-olivegreen-4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -148,13 +147,23 @@ figure img {
 
 figcaption {
     padding: var(--padding-all-1rem);
-    background-color: var(--color-olivegreen-6);
     text-align: center;
     font-weight: normal;
     font-size: larger;
     border-top: 1px solid var(--color-olivegreen-4);
 }
 
+.label {
+    font-weight: bold;
+    text-align: right;
+}
+
+.fig-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0.3rem;
+    text-align: left;
+}
 
 /* Footer*/
 footer {

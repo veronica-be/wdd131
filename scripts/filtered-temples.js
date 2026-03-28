@@ -118,9 +118,10 @@ function templeCards(temples) {
             >
             <figcaption>
             <h3>${temples.templeName}</h3>
-            <p><span class="label">Location:</span> ${temples.location}</p>
-            <p><span class="label">Dedicated:</span> ${temples.dedicated}</p>
-            <p><span class="label">Area:</span> ${temples.area.toLocaleString()} sq ft</p>
+            <div class="fig-grid">
+            <p class="label">Location:</p> <p>${temples.location}</p>
+            <p class="label">Dedicated:</p> <p>${temples.dedicated}</p>
+            <p class="label">Area:</p> <p>${temples.area.toLocaleString()} sq ft</p>
             </figcaption>
     `;
         mainElement.appendChild(card);

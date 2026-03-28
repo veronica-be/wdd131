@@ -48,7 +48,7 @@
     }
 
     /*Extra changes*/
-    div {
+    main div {
         grid-column: 1/4;
     }
 
