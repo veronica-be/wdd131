@@ -65,7 +65,7 @@ const temples = [
         dedicated: "1983, December, 2",
         area: 116642,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://templetours.org/wp-content/uploads/2021/03/mexico-city-temple-lds-591669-wallpaper.webp"
     },
     {
         templeName: "Rome Italy",
