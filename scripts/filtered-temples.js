@@ -160,7 +160,7 @@ const largeTempleOnly = document.querySelector("#large");
 
 largeTempleOnly.addEventListener("click", () => {
     h1Name = "Large";
-    h2Name = "temples larger than 90,000 square feet";
+    h2Name = "Temples larger than 90,000 square feet";
     let largeTemples = temples.filter(temple => temple.area > 90000);
     templeCards(largeTemples);
 });
