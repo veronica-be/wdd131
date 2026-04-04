@@ -1,0 +1,161 @@
+:root {
+    --padding-all-1rem: 1rem;
+    --padding-h: 1rem;
+    --margin-nav: 0;
+    --margin-main: 1rem auto 2rem;
+    --padding-footer: 2rem 0 2rem;
+    --padding-nav: 1rem 0 1rem;
+    --text-color-h: white;
+    --text-color-nav: white;
+    --text-color-footer: white;
+    /*It is a olivegren color palette for all my pages*/
+    --color-olivegreen-5: #272b00;
+    --color-olivegreen-4: #54582f;
+    --color-olivegreen-3: #86895d;
+    --color-olivegreen-2: #bec092;
+    --color-olivegreen-1: #f8fbca;
+    --color-olivegreen-6: #f8fbca;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--color-olivegreen-5);
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background: var(--color-olivegreen-4);
+    color: var(--text-color-h);
+    text-align: center;
+    padding: var(--padding-h);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+main {
+    margin: var(--margin-main);
+    padding: var(--padding-all-1rem);
+    display: flex;
+    flex-direction: column;
+}
+
+/* form ID */
+#productReview {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+fieldset {
+    border: 1px solid var(--color-olivegreen-3);
+    background-color: var(--color-olivegreen-1);
+    border-radius: 4px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+legend {
+    display: block;
+    float: left;
+    color: var(--color-olivegreen-5);
+    font-weight: bold;
+}
+
+.rating-fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+fieldset label,
+.rating-option {
+    display: flex;
+    gap: 0.6rem;
+    cursor: pointer;
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-olivegreen-2);
+    border-radius: 0;
+    font-family: inherit;
+    font-size: large;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: var(--color-olivegreen-5);
+    color: white;
+    padding: 1.2rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background-color: var(--color-olivegreen-4);
+}
+
+/* --- Review Page Specifics (review.html) --- */
+.summary-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--color-olivegreen-6);
+    border-top: 4px solid var(--color-olivegreen-4);
+}
+
+#reviewCounter,
+#productReviewed {
+    font-weight: bold;
+    color: var(--color-olivegreen-5);
+    text-decoration: underline;
+}
+
+.summary-part p {
+    border-bottom: 1px solid var(--color-olivegreen-2);
+    padding-bottom: 0.5rem;
+}
+
+.strong {
+    font-weight: bolder;
+}
+
+.optional,
+.instruction {
+    font-weight: normal;
+    font-style: italic;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+@media screen and (min-width: 750px) {
+    main {
+        max-width: 70%;
+    }
+}
