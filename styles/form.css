@@ -133,6 +133,7 @@ fieldset label:has(input[name="features"]:checked) {
 
 .summaryHeight {
     min-height: 592px;
+    contain: layout;
 }
 
 .CommentValue {
