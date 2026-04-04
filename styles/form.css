@@ -1,6 +1,6 @@
 :root {
     --padding-all-1rem: 1rem;
-    --padding-h: 1rem;
+    --padding-h: 1.5rem;
     --margin-nav: 0;
     --margin-main: 1rem auto 2rem;
     --padding-footer: 2rem 0 2rem;
@@ -41,6 +41,7 @@ footer {
 
 
 main {
+    width: 100%;
     margin: var(--margin-main);
     padding: var(--padding-all-1rem);
     display: flex;
@@ -102,42 +103,13 @@ textarea {
     background-color: var(--color-olivegreen-5);
     color: white;
     padding: 1.2rem;
-    border: none;
+    border-radius: 30px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.submit-button:hover {
-    background-color: var(--color-olivegreen-4);
-}
-
-/* --- Review Page Specifics (review.html) --- */
-.summary-part {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: var(--color-olivegreen-6);
-    border-top: 4px solid var(--color-olivegreen-4);
-}
-
-#reviewCounter,
-#productReviewed {
-    font-weight: bold;
-    color: var(--color-olivegreen-5);
-    text-decoration: underline;
-}
-
-.summary-part p {
-    border-bottom: 1px solid var(--color-olivegreen-2);
-    padding-bottom: 0.5rem;
-}
-
-.strong {
+    letter-spacing: 0.1rem;
     font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .optional,
@@ -146,16 +118,84 @@ textarea {
     font-style: italic;
 }
 
-footer p {
-    margin-bottom: 0.5rem;
-}
 
 textarea {
     resize: none;
 }
 
+
+/* review.html part*/
+.summary-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background: var(--color-olivegreen-6);
+    border-top: 6px solid var(--color-olivegreen-4);
+}
+
+.CommentValue {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    vertical-align: top;
+}
+
+#reviewCounter,
+#productReviewed {
+    font-weight: bold;
+    color: var(--color-olivegreen-5);
+}
+
+.summary-part p {
+    border-bottom: 1px solid var(--color-olivegreen-2);
+    padding-bottom: 1rem;
+}
+
+.strong {
+    font-weight: bolder;
+}
+
+
 @media screen and (min-width: 750px) {
     main {
         max-width: 70%;
+        margin-top: 2.5rem;
     }
+
+    header {
+        padding: 3rem 0;
+    }
+
+    .submit-button:hover {
+        transition: background 0.3s;
+        background-color: var(--color-olivegreen-4);
+    }
+
+    .submit-button:active {
+        transform: scale(0.95);
+    }
+
+    fieldset:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .width {
+        width: fit-content;
+    }
+
+    .rating-option input:hover+label,
+    fieldset label:has(input[name="features"]):hover {
+        cursor: pointer;
+        text-shadow: 0 0 6px var(--color-olivegreen-2);
+    }
+
+    .rating-option input:checked+label,
+    fieldset label:has(input[name="features"]:checked) {
+        font-weight: 600;
+        color: var(--color-olivegreen-5);
+    }
+
+
 }

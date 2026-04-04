@@ -46,7 +46,12 @@ summaryUser.innerHTML = "";
 function displayData(label, value) {
     if (value) {
         const p = document.createElement("p");
-        p.innerHTML = `<span class="strong">${label}:</span> ${value}`;
+
+        const displayValue = (label === "Review Comments")
+            ? `<span class="CommentValue">${value}</span>`
+            : value;
+
+        p.innerHTML = `<span class="strong">${label}:</span> ${displayValue}`;
         summaryUser.appendChild(p);
     }
 }

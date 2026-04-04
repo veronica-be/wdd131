@@ -37,7 +37,5 @@ products.forEach(product => {
 });
 
 /*footer*/
-document.getElementById('currentyear').innerHTML = currentYear;
-
-const lastModified = document.lastModified;
-document.getElementById('lastModified').innerHTML = `Last Modified: ${document.lastModified}`;
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
