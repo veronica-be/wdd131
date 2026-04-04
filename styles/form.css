@@ -129,12 +129,16 @@ fieldset label:has(input[name="features"]:checked) {
     padding: 2rem;
     background: var(--color-olivegreen-6);
     border-top: 6px solid var(--color-olivegreen-4);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .summaryHeight {
     height: 592px;
     overflow-y: auto;
     scrollbar-gutter: stable;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
