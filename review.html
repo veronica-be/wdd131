@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Veronica Becerra Estrada">
     <meta name="description" content="Product review form sent, completition of form feedback.">
-    <script src="scripts/reviewform.js"></script>
+    <script src="scripts/reviewform.js" defer></script>
     <link rel="stylesheet" href="styles/form.css">
     <title>Review Posted</title>
 </head>
@@ -19,7 +19,8 @@
     </header>
 
     <main>
-        <p>Thank you! Your feedback has been received.</p>
+        <p>Thank you! Your feedback of <span id="productReviewed"></span> has been received.</p>
+        <p>Reviews posted: <span id="reviewCounter"></span></p>
         <p>Summary of your submission:</p>
 
         <div id="summary" class="summary-part">
