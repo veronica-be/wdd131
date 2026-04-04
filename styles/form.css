@@ -181,6 +181,7 @@ fieldset label:has(input[name="features"]:checked) {
 .summary-part p {
     border-bottom: 1px solid var(--color-olivegreen-2);
     padding-bottom: 1rem;
+    min-height: 1.6rem;
 }
 
 .strong {
@@ -225,6 +226,10 @@ fieldset label:has(input[name="features"]:checked) {
     main {
         margin-top: 2.5rem;
         max-width: 80%;
+    }
+
+    main>p {
+        min-height: 1.6rem;
     }
 
     header {
