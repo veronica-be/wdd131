@@ -134,7 +134,9 @@ fieldset label:has(input[name="features"]:checked) {
 .summaryHeight {
     height: 592px;
     overflow-y: auto;
+    scrollbar-gutter: stable;
 }
+
 
 .CommentValue {
     display: inline-block;
