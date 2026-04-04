@@ -197,7 +197,7 @@ fieldset label:has(input[name="features"]:checked) {
 
 .reviewHeader img {
     height: 3rem;
-    width: auto;
+    width: 3rem;
     align-self: center;
 }
 
@@ -283,8 +283,8 @@ fieldset label:has(input[name="features"]:checked) {
 
     .reviewHeader img {
         height: 5rem;
-        width: auto;
-        padding-bottom: 0.5rem;
+        width: 5rem;
+        border-bottom: 0.5rem;
     }
 
     .rating-option input:hover+label,
