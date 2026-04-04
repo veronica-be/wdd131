@@ -40,26 +40,22 @@ const product = products.find(product => product.id === info.get("productName"))
 productReviewed.textContent = product?.name ?? info.get("productName");
 
 const summaryUser = document.querySelector("#summary");
-
-summaryUser.innerHTML = "";
+const Upload = document.createDocumentFragment();
 
 function displayData(label, value) {
+    const p = document.createElement("p");
     if (value) {
-        const p = document.createElement("p");
-
         const displayValue = (label === "Review Comments")
             ? `<span class="CommentValue">${value}</span>`
             : value;
 
         p.innerHTML = `<span class="strong">${label}:</span> ${displayValue}`;
-        summaryUser.appendChild(p);
     }
 
     else {
-        const p = document.createElement("p");
         p.innerHTML = `<span class="strong">${label}:</span> —`;
-        summaryUser.appendChild(p);
     }
+    Upload.appendChild(p);
 }
 
 const features = info.getAll("features");
@@ -74,6 +70,8 @@ if (features.length > 0) {
 displayData("Review Comments", info.get("review"));
 displayData("User Name", info.get("userName"));
 
+summaryUser.innerHTML = "";
+summaryUser.appendChild(Upload);
 
 /*footer*/
 document.getElementById('currentyear').textContent = new Date().getFullYear();
