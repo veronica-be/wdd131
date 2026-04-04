@@ -129,8 +129,10 @@ textarea {
     display: inline-block;
     max-width: 100%;
     overflow-wrap: break-word;
+    text-align: justify;
     word-break: keep-all;
     vertical-align: top;
+    padding: 0 0.5rem 0 0.3rem;
 }
 
 #reviewCounter,
@@ -221,9 +223,11 @@ textarea {
         padding: 2rem 1.5rem 2rem 1.5rem;
     }
 
-    .width {
+    fieldset label {
         width: fit-content;
+        padding: 0 2rem 0 0;
     }
+
 
     .reviewHeader {
         flex-direction: column;
