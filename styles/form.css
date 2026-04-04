@@ -156,6 +156,10 @@ fieldset label:has(input[name="features"]:checked) {
     font-weight: bolder;
 }
 
+.heightSubmit {
+    min-height: 592px;
+}
+
 .reviewHeader {
     display: flex;
     flex-direction: row;
