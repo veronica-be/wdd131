@@ -54,6 +54,12 @@ function displayData(label, value) {
         p.innerHTML = `<span class="strong">${label}:</span> ${displayValue}`;
         summaryUser.appendChild(p);
     }
+
+    else {
+        const p = document.createElement("p");
+        p.innerHTML = `<span class="strong">${label}:</span> —`;
+        summaryUser.appendChild(p);
+    }
 }
 
 const features = info.getAll("features");
