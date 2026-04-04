@@ -27,7 +27,7 @@ const products = [
 ];
 
 let reviewCount = Number(window.localStorage.getItem("review-count")) || 0;
-reviewCount++;
+reviewCount += 1;
 window.localStorage.setItem("review-count", reviewCount);
 
 const reviewCounter = document.querySelector("#reviewCounter");
@@ -54,8 +54,8 @@ function displayData(label, value) {
 const features = info.getAll("features");
 displayData("Product Name", product?.name ?? info.get("productName"));
 displayData("Product ID", info.get("productName"));
-displayData("Rating", info.get("rating"));
-displayData("Installation Date", info.get("installationDate"));
+displayData("Overall Rating", info.get("rating"));
+displayData("Date of Installation", info.get("installationDate"));
 if (features.length > 0) {
     displayData("Useful Features", features.join(", "));
 }
