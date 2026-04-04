@@ -131,6 +131,10 @@ fieldset label:has(input[name="features"]:checked) {
     border-top: 6px solid var(--color-olivegreen-4);
 }
 
+.summaryHeight {
+    min-height: 592px;
+}
+
 .CommentValue {
     display: inline-block;
     max-width: 100%;
@@ -139,6 +143,47 @@ fieldset label:has(input[name="features"]:checked) {
     word-break: keep-all;
     vertical-align: top;
     padding: 0 0.5rem 0 0.3rem;
+    max-height: 8rem;
+    overflow-y: auto;
+    padding: 0.5rem;
+    border: 1px solid var(--color-olivegreen-2);
+    border-radius: 4px;
+}
+
+.CommentValue::-webkit-scrollbar {
+    width: 12px;
+}
+
+.CommentValue::-webkit-scrollbar-track {
+    background: var(--color-olivegreen-2);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+}
+
+.CommentValue::-webkit-scrollbar-thumb {
+    background: var(--color-olivegreen-5);
+    border: 2px solid var(--color-olivegreen-6);
+    border-radius: 10px;
+}
+
+.CommentValue::-webkit-scrollbar-button:single-button {
+    background-color: var(--color-olivegreen-5);
+    display: block;
+    border-style: solid;
+    height: 11px;
+    width: 10px;
+    border-radius: 2px;
+}
+
+.CommentValue::-webkit-scrollbar-button:vertical:decrement {
+    border-width: 0 5px 9px 5px;
+    border-color: transparent transparent var(--color-olivegreen-2) transparent;
+}
+
+.CommentValue::-webkit-scrollbar-button:vertical:increment {
+    border-width: 9px 5px 0 5px;
+    border-color: var(--color-olivegreen-2) transparent transparent transparent;
 }
 
 #reviewCounter,
@@ -156,9 +201,6 @@ fieldset label:has(input[name="features"]:checked) {
     font-weight: bolder;
 }
 
-.heightSubmit {
-    min-height: 592px;
-}
 
 .reviewHeader {
     display: flex;
@@ -207,6 +249,10 @@ fieldset label:has(input[name="features"]:checked) {
     .link:hover {
         transition: background-color 0.3s;
         background-color: var(--color-olivegreen-4);
+    }
+
+    .CommentValue::-webkit-scrollbar {
+        width: 11px;
     }
 
     .link {
