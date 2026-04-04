@@ -135,6 +135,7 @@ fieldset label:has(input[name="features"]:checked) {
     min-height: 592px;
     max-height: 592px;
     overflow-y: auto;
+    content-visibility: auto;
 }
 
 .CommentValue {
