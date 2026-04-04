@@ -52,7 +52,7 @@ function SubmmitDisplay(label, value) {
 }
 
 const features = info.getAll("features");
-SubmmitDisplay("Product Name", info.get("productName"));
+SubmmitDisplay("Product Name", product?.name ?? info.get("productName"));
 SubmmitDisplay("Product ID", info.get("productName"));
 SubmmitDisplay("Overall Rating", info.get("rating"));
 SubmmitDisplay("Date of Installation", info.get("installationDate"));
