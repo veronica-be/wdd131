@@ -115,6 +115,12 @@ textarea {
     resize: none;
 }
 
+.rating-option input:checked+label,
+fieldset label:has(input[name="features"]:checked) {
+    font-weight: 600;
+    color: var(--color-olivegreen-5);
+}
+
 /* review.html part*/
 .summary-part {
     display: flex;
@@ -245,13 +251,6 @@ textarea {
         cursor: pointer;
         text-shadow: 0 0 6px var(--color-olivegreen-2);
     }
-
-    .rating-option input:checked+label,
-    fieldset label:has(input[name="features"]:checked) {
-        font-weight: 600;
-        color: var(--color-olivegreen-5);
-    }
-
 
 }
 
