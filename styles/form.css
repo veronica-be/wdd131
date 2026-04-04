@@ -134,7 +134,7 @@ fieldset label:has(input[name="features"]:checked) {
 .summaryHeight {
     min-height: 592px;
     contain: layout;
-    max-height: 592;
+    max-height: 592px;
     overflow-y: auto;
 }
 
