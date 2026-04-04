@@ -153,24 +153,28 @@ fieldset label:has(input[name="features"]:checked) {
     border-radius: 4px;
 }
 
-.CommentValue::-webkit-scrollbar {
+.CommentValue::-webkit-scrollbar,
+.summaryHeight::-webkit-scrollbar {
     width: 12px;
 }
 
-.CommentValue::-webkit-scrollbar-track {
+.CommentValue::-webkit-scrollbar-track,
+.summaryHeight::-webkit-scrollbar-track {
     background: var(--color-olivegreen-2);
     margin-top: 1px;
     margin-bottom: 1px;
     border-radius: 10px;
 }
 
-.CommentValue::-webkit-scrollbar-thumb {
+.CommentValue::-webkit-scrollbar-thumb,
+.summaryHeight::-webkit-scrollbar-thumb {
     background: var(--color-olivegreen-5);
     border: 2px solid var(--color-olivegreen-6);
     border-radius: 10px;
 }
 
-.CommentValue::-webkit-scrollbar-button:single-button {
+.CommentValue::-webkit-scrollbar-button:single-button,
+.summaryHeight::-webkit-scrollbar-button:single-button {
     background-color: var(--color-olivegreen-5);
     display: block;
     border-style: solid;
@@ -179,12 +183,14 @@ fieldset label:has(input[name="features"]:checked) {
     border-radius: 2px;
 }
 
-.CommentValue::-webkit-scrollbar-button:vertical:decrement {
+.CommentValue::-webkit-scrollbar-button:vertical:decrement,
+.summaryHeight::-webkit-scrollbar-button:vertical:decrement {
     border-width: 0 5px 9px 5px;
     border-color: transparent transparent var(--color-olivegreen-2) transparent;
 }
 
-.CommentValue::-webkit-scrollbar-button:vertical:increment {
+.CommentValue::-webkit-scrollbar-button:vertical:increment,
+.summaryHeight::-webkit-scrollbar-button:vertical:increment {
     border-width: 9px 5px 0 5px;
     border-color: var(--color-olivegreen-2) transparent transparent transparent;
 }
