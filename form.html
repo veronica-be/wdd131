@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <form id="productReview" method="get" action="review.html">
+        <form id="productReview" method="get" action="review.html" autocomplete="off">
 
             <fieldset>
                 <label for="productName" class="strong">Product Name</label>
@@ -85,12 +85,12 @@
 
             <fieldset>
                 <label for="review" class="strong">Written Review <span class="optional">(Optional)</span></label>
-                <textarea id="review" name="review" rows="4" autocomplete="off"></textarea>
+                <textarea id="review" name="review" rows="4"></textarea>
             </fieldset>
 
             <fieldset>
                 <label for="userName" class="strong">Your Name <span class="optional">(Optional)</span></label>
-                <input type="text" id="userName" name="userName">
+                <input type="text" id="userName" name="userName" autocomplete="on">
             </fieldset>
         </form>
         <input form="productReview" type="submit" value="Submit Post Review" class="submit-button">
