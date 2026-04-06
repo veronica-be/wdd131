@@ -156,11 +156,10 @@ em {
     font-size: 0.88rem;
 }
 
-.name-text img,
-{
-width: 50%;
-height: auto;
-display: block;
+.name-text img {
+    width: 50%;
+    height: auto;
+    display: block;
 }
 
 .pages-grid,
