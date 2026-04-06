@@ -68,9 +68,10 @@ header h1 {
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    ;
 
 }
 
@@ -127,20 +128,6 @@ em {
     font-size: 1rem;
     margin-top: 0.5rem;
     font-weight: bolder;
-}
-
-.num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: var(--color-olivegreen-3);
-    color: var(--color-olivegreen-1);
-    font-size: 0.85rem;
-    font-weight: 600;
-    flex-shrink: 0;
 }
 
 .name-text h3 {
