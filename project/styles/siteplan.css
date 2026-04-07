@@ -131,7 +131,7 @@ em {
     font-size: 0.88rem;
 }
 
-.name-text img {
+.name-text picture {
     width: 50%;
     height: fit-content;
     float: right;
