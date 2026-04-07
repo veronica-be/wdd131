@@ -268,7 +268,7 @@ footer {
 @font-face {
     font-family: 'Crimson';
     src: url('crimson/Crimson-Bold.ttf') format('truetype');
-    font-weight: bolder;
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
@@ -276,7 +276,7 @@ footer {
 @font-face {
     font-family: 'Crimson';
     src: url('crimson/Crimson-BoldItalic.ttf') format('truetype');
-    font-weight: bolder;
+    font-weight: 900;
     font-style: italic;
     font-display: swap;
 }
