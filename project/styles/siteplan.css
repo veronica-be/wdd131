@@ -4,8 +4,6 @@
     --color-olivegreen-3: #86895d;
     --color-olivegreen-2: #bec092;
     --color-olivegreen-1: #f8fbca;
-    --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'Crimson', Georgia, serif;
 }
 
 * {
@@ -17,7 +15,7 @@
 body {
     background-color: whitesmoke;
     color: var(--color-olivegreen-5);
-    font-family: var(--font-body);
+    font-family: 'Crimson', Georgia, serif;
     text-align: justify;
 }
 
@@ -53,7 +51,7 @@ h1,
 h2,
 h3,
 .font-sample-display {
-    font-family: var(--font-display);
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 header h1 {
