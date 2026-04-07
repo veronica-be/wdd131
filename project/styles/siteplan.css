@@ -258,7 +258,7 @@ footer {
 /*Sirenik*/
 @font-face {
     font-family: 'Sirenik';
-    src: url('Sirenik-Regular.otf') format('opentype');
+    src: url('sirenik-regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -267,7 +267,7 @@ footer {
 /*Crimson*/
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/Crimson-Bold.ttf') format('truetype');
+    src: url('crimson/crimson-bold.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -275,7 +275,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/Crimson-BoldItalic.ttf') format('truetype');
+    src: url('crimson/crimson-bold-italic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -283,7 +283,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/Crimson-Italic.ttf') format('truetype');
+    src: url('crimson/crimson-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -291,7 +291,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/Crimson-Roman.ttf') format('truetype');
+    src: url('crimson/crimson-roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -299,7 +299,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/Crimson-Semibold.ttf') format('truetype');
+    src: url('crimson/crimson-semibold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -307,7 +307,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/Crimson-SemiboldItalic.ttf') format('truetype');
+    src: url('crimson/crimson-semibold-italic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -317,7 +317,7 @@ footer {
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/PlayfairDisplay-Bold.ttf') format('truetype');
+    src: url('playfair-display/playfairdisplay-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -325,7 +325,7 @@ footer {
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    src: url('playfair-display/playfairdisplay-bold-italic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -333,7 +333,7 @@ footer {
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/PlayfairDisplay-Italic.ttf') format('truetype');
+    src: url('playfair-display/playfairdisplay-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -341,7 +341,7 @@ footer {
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/PlayfairDisplay-Regular.ttf') format('truetype');
+    src: url('playfair-display/playfairdisplay-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
