@@ -5,15 +5,7 @@
     --color-olivegreen-2: #bec092;
     --color-olivegreen-1: #f8fbca;
     --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'Crimson Pro', Georgia, serif;
-}
-
-@font-face {
-    font-family: 'Sirenik';
-    src: url('Sirenik-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    --font-body: 'Crimson', Georgia, serif;
 }
 
 * {
@@ -258,4 +250,115 @@ footer {
     .wireframe-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/*I decided to put mi own fornt cause Google Fonts are flagging I donk rememebr what in the Lighthouse so...*/
+/*THE FONTS*/
+/*Sirenik*/
+@font-face {
+    font-family: 'Sirenik';
+    src: url('Sirenik-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Crimson*/
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson/Crimson-Bold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson/Crimson-BoldItalic.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson/Crimson-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson/Crimson-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson/Crimson-Semibold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson/Crimson-SemiboldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*playfair-display*/
+
+/*I was thinking to not add it cause I really see no such difference with bold*/
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfair-display/PlayfairDisplay-Black.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfair-display/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfair-display/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfair-display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfair-display/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfair-display/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
