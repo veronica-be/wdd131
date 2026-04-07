@@ -265,7 +265,7 @@ footer {
 /*Crimson*/
 /* @font-face {
     font-family: 'Crimson';
-    src: url('crimson/crimson-bold.ttf') format('truetype');
+    src: url('crimson-bold.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -273,7 +273,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/crimson-bold-italic.ttf') format('truetype');
+    src: url('crimson-bold-italic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -281,7 +281,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/crimson-italic.ttf') format('truetype');
+    src: url('crimson-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -289,7 +289,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/crimson-roman.ttf') format('truetype');
+    src: url('crimson-roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -297,7 +297,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/crimson-semibold.ttf') format('truetype');
+    src: url('crimson-semibold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -305,7 +305,7 @@ footer {
 
 @font-face {
     font-family: 'Crimson';
-    src: url('crimson/crimson-semibold-italic.ttf') format('truetype');
+    src: url('crimson-semibold-italic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -315,7 +315,7 @@ footer {
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/playfairdisplay-bold.ttf') format('truetype');
+    src: url('playfairdisplay-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -323,7 +323,7 @@ footer {
 
 /* @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/playfairdisplay-bold-italic.ttf') format('truetype');
+    src: url('playfairdisplay-bold-italic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -331,7 +331,7 @@ footer {
 
 /* @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/playfairdisplay-italic.ttf') format('truetype');
+    src: url('playfairdisplay-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -339,7 +339,7 @@ footer {
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('playfair-display/playfairdisplay-regular.ttf') format('truetype');
+    src: url('playfairdisplay-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
