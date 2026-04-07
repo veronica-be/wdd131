@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: var(--color-olivegreen-1);
+    background-color: whitesmoke;
     color: var(--color-olivegreen-5);
     font-family: var(--font-body);
     text-align: justify;
