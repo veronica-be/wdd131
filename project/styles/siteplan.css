@@ -263,7 +263,7 @@ footer {
 }
 
 /*Crimson*/
-@font-face {
+/* @font-face {
     font-family: 'Crimson';
     src: url('crimson/crimson-bold.ttf') format('truetype');
     font-weight: 900;
@@ -277,7 +277,7 @@ footer {
     font-weight: 900;
     font-style: italic;
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: 'Crimson';
@@ -321,21 +321,21 @@ footer {
     font-display: swap;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Playfair Display';
     src: url('playfair-display/playfairdisplay-bold-italic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'Playfair Display';
     src: url('playfair-display/playfairdisplay-italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: 'Playfair Display';
