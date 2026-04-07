@@ -13,6 +13,7 @@
     src: url('Sirenik-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -52,7 +53,8 @@ header {
 header img {
     margin: auto;
     width: 35%;
-    height: fit-content;
+    height: auto;
+    aspect-ratio: 6/3;
 }
 
 h1,
@@ -143,6 +145,7 @@ em {
     width: 50%;
     height: fit-content;
     float: right;
+    aspect-ratio: 16/9;
 }
 
 .h3clear {
@@ -232,7 +235,9 @@ em {
 .wireframe-box img {
     width: 100%;
     height: auto;
+    aspect-ratio: 9 / 16;
 }
+
 
 .page-card-center,
 footer,
