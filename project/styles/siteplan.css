@@ -253,6 +253,7 @@ footer {
 }
 
 /*I decided to put mi own fornt cause Google Fonts are flagging I donk rememebr what in the Lighthouse so...*/
+/*Atleast in mobile lighthouse went form 88 to 96, but still low at desktop*/
 /*THE FONTS*/
 /*Sirenik*/
 @font-face {
@@ -313,23 +314,6 @@ footer {
 }
 
 /*playfair-display*/
-
-/*I was thinking to not add it cause I really see no such difference with bold*/
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('playfair-display/PlayfairDisplay-Black.ttf') format('truetype');
-    font-weight: bolder;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('playfair-display/PlayfairDisplay-BlackItalic.ttf') format('truetype');
-    font-weight: bolder;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Playfair Display';
