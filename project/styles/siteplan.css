@@ -141,7 +141,7 @@ em {
 
 .name-text img {
     width: 50%;
-    height: auto;
+    height: fit-content;
     float: right;
 }
 
