@@ -18,13 +18,61 @@
         <div>
             <img src="" alt="" fetchpriority="high">
             <h1>Get in Touch with Avoranti</h1>
+            <h2>How can we help you?</h2>
             <p>At Avoranti, we value every interaction. Whether you have a technical question, a product review, or a
                 concern regarding our service, we are committed to listening and improving for you.</p>
             <p>Please fill out the form below and our team will contact you shortly.</p>
         </div>
 
-        <form action="">
+        <form method="get" action="confirmation.html">
+            <p><strong><em>*</strong> Required fields</em></p>
 
+            <div>
+                <label for="reason"></label>Reason for contact <strong><em>*</em></strong></label>
+                <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Please select a reason</option>
+                    <option value="General Question">General Question</option>
+                    <option value="Product Review">Product Review</option>
+                    <option value="Claim">Submit a Claim</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="topic"></label>Topic <strong><em>*</em></strong></label>
+                <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Select a reason first</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Type here your message <strong><em>*</em></strong></label>
+                <textarea id="message" name="review" rows="4" placeholder="Type here..." required></textarea>
+            </div>
+
+            <div>
+                <label for="name">Name <strong><em>*</em></strong></label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <label for="last-name">Last names <em>(Optional)</em></label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last names">
+            </div>
+
+            <div>
+                <label for="email">E-mail <strong><em>*</em></strong></label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+
+            <div>
+                <label for="tel">Telephone number <strong><em>*</em></strong></label>
+                <input type="tel" id="tel" name="tel" placeholder="+52 000 000 0000" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="accept-terms" name="terms" placeholder="+52 000 000 0000" required>
+                <label for="accept-terms">Confirm that you have read and understood our website Terms of Use and Privacy
+                    Policy.<strong><em>*</em></strong></label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
+            </div>
+
+            <input type="submit" value="Submit Message" class="submit-button">
 
         </form>
     </section>
