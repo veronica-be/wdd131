@@ -9,8 +9,8 @@
         content="Discover Avoranti, Mexico's premium bean-to-bar chocolate provider. Over 20 years of expertise offering exceptional taste and consistent quality for pastry chefs and chocolatiers worldwide.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -18,15 +18,13 @@
         <a href="index.html"><img src="" alt="Logo of Avoranti" width="" height="" fetchpriority="high">
             <span>AVORANTI</span></a>
 
-
-        <a class="menu" href="#" title="Menu"></a><!--Home-->
-        <button id="mobile-menu-btn" class="menu-btn" aria-label="Click to open the navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav>
+        <!--Menu logo for mobile-->
+        <div class="container" onclick="menuShowMobile(this)" aria-label="Click to open the navigation menu">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+        </div>
+        <nav class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>

@@ -10,6 +10,7 @@
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
     <link rel="stylesheet" href="" fetchpriority="high">
+    <script src="scripts/contact-us.js" defer></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             <p>Please fill out the form below and our team will contact you shortly.</p>
         </div>
 
-        <form method="get" action="confirmation.html">
+        <form id="contactUs" method="get" action="confirmation.html">
             <p><strong><em>*</strong> Required fields</em></p>
 
             <div>
@@ -32,15 +33,17 @@
                 <select id="reason" name="reason" required>
                     <option value="" disabled selected>Please select a reason</option>
                     <option value="General Question">General Question</option>
-                    <option value="Product Review">Product Review</option>
+                    <option value="Product Review">Product
+                        Review</option>
                     <option value="Claim">Submit a Claim</option>
                 </select>
             </div>
 
             <div>
-                <label for="topic"></label>Topic <strong><em>*</em></strong></label>
-                <select id="topic" name="topic" required>
-                    <option value="" disabled selected>Select a reason first</option>
+                <label for="topic">Subject<strong><em>*</em></strong></label>
+                <select id="topic" name="topic" disabled
+                    aria-label="Select a specific reason first before selecting a subject" required>
+                    <option value="" disabled selected>Please select a reason first</option>
                 </select>
             </div>
 
