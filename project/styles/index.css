@@ -195,8 +195,7 @@ h3 {
 .card-product-img {
     background-color: var(--color-olivegreen-2);
     max-width: 100%;
-    min-height: 100%;
-    aspect-ratio: ;
+    aspect-ratio: 3/4;
     padding: 2rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--color-olivegreen-5);
@@ -229,7 +228,7 @@ h3 {
 
     .product-grid {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(8, 1fr);
         gap: 10px;
         padding: 40px;
         margin: 5% 10% 10% 10%;
