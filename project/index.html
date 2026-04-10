@@ -8,7 +8,7 @@
     <meta name="description"
         content="Discover Avoranti, Mexico's premium bean-to-bar chocolate provider. Over 20 years of expertise offering exceptional taste and consistent quality for pastry chefs and chocolatiers worldwide.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header-footer.css">
     <script src="scripts/header-footer.js" defer></script>
 </head>
@@ -39,15 +39,21 @@
 
     <main>
         <!-- Main Heading of page section part, hero image-->
-        <section class="absolute">
-            <img src="" alt="">
-            <h1>MASTERS OF FLAVOR</h1>
-            <p>Delighted to delight you</p>
+        <section class="hero">
+            <img class="hero-bg" src="images/hero-index.avif"
+                alt="chocolate and cocoa (if you can't see image try an updated browser cause all my images are type avif)"
+                title="Figure 1" fetchpriority="high">
+            <div class="hero-content ">
+                <h1 class="color-white">MASTERS <br>OF<br> FLAVOR</h1>
+                <p class="hero-content color-white">Delighted to delight you</p>
+            </div>
         </section>
         <!-- My content was written in word(microsoft) first-->
         <!--PART 1-->
         <section>
-            <p>The strategic ally of chocolate in Mexico,<strong> Avoranti</strong>. Our expertise in processing
+            <p class="p-below-h1 olive4">The strategic ally of chocolate in Mexico,<strong> Avoranti</strong>. Our
+                expertise in
+                processing
                 chocolate beans into tablets guarantees an exceptional flavor, consistent and the stability your
                 production demands. With a certified quality, we give you the confidence to take your creations to the
                 next level. Experience the finest chocolate Mexico has to offer.</p>
@@ -55,57 +61,77 @@
 
         <!--PART 2: products cards-->
         <section>
-            <h2>QUICK VIEW TO OUR PRODUCTS</h2>
-
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>Dark Chocolate 70%</h3>
-                <p>Our most intense chocolate. With a deep cocoa flavor and subtle earthy notes, this 70% couverture is
-                    perfect for those seeking a bold, sophisticated character in their ganache and truffles.</p>
+            <div class=" h-center-line">
+                <h2>QUICK VIEW TO OUR PRODUCTS</h2>
+                <div></div>
             </div>
+            <section class="product-grid">
+                <div class="card-product">
+                    <div><!-- CSS LINE CARD TOP --></div>
+                    <div class="h-center-line">
+                        <h3>Dark Chocolate 70%</h3>
+                        <div></div>
+                    </div>
+                    <p>Our most intense chocolate. With a deep cocoa flavor and subtle earthy notes, this 70% couverture
+                        is
+                        perfect for those seeking a bold, sophisticated character in their ganache and truffles.</p>
+                </div>
 
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>Dark Chocolate 65%</h3>
-                <p>It offers a smooth balance between bitterness and sweetness, making it the ideal reliable partner for
-                    high-end pastry and delicate dipping.</p>
-            </div>
+                <div class="card-product">
+                    <div class="h-center-line">
+                        <h3>Dark Chocolate 65%</h3>
+                        <div></div>
+                    </div>
+                    <p>It offers a smooth balance between bitterness and sweetness, making it the ideal reliable partner
+                        for
+                        high-end pastry and delicate dipping.</p>
+                </div>
 
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>Dark Chocolate 60%</h3>
-                <p>Designed for a wider palate. This chocolate provides a rich, classic cocoa taste with a smooth
-                    finish.</p>
-            </div>
+                <div class="card-product">
+                    <div class="h-center-line">
+                        <h3>Dark Chocolate 60%</h3>
+                        <div></div>
+                    </div>
+                    <p>Designed for a wider palate. This chocolate provides a rich, classic cocoa taste with a smooth
+                        finish.</p>
+                </div>
 
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>Milk Chocolate</h3>
-                <p>Made with premium Mexican cacao and high-quality dairy, it delivers a silky texture and a comforting,
-                    honey-like sweetness.</p>
-            </div>
+                <div class="card-product">
+                    <div class="h-center-line">
+                        <h3>Milk Chocolate</h3>
+                        <div></div>
+                    </div>
+                    <p>Made with premium Mexican cacao and high-quality dairy, it delivers a silky texture and a
+                        comforting,
+                        honey-like sweetness.</p>
+                </div>
 
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>White Chocolate</h3>
-                <p>Buttery, smooth, and never too sweet. Our white chocolate is crafted for impeccable melting and a
-                    clean dairy profile that allows your infusions and flavors to shine.</p>
-            </div>
+                <div class="card-product">
+                    <div class="h-center-line">
+                        <h3>White Chocolate</h3>
+                        <div></div>
+                    </div>
+                    <p>Buttery, smooth, and never too sweet. Our white chocolate is crafted for impeccable melting and a
+                        clean dairy profile that allows your infusions and flavors to shine.</p>
+                </div>
 
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>Premium Cocoa Powder</h3>
-                <p>100% pure cocoa with a fine texture and deep color. It provides an intense chocolate boost to
-                    sponges, cookies, and decorations without compromising on quality.</p>
-            </div>
-
-            <div>
-                <div><!-- CSS LINE CARD TOP --></div>
-                <h3>Roasted Cocoa Nibs</h3>
-                <p>Experience the raw heart of Mexican cacao. Our nibs are carefully roasted and crushed to add a
-                    sophisticated crunch and a deep, nutty chocolate flavor to your recipes.</p>
-            </div>
-
+                <div class="card-product">
+                    <div class="h-center-line">
+                        <h3>Cocoa Powder</h3>
+                        <div></div>
+                    </div>
+                    <p>100% pure cocoa with a fine texture and deep color. It provides an intense chocolate boost to
+                        sponges, cookies, and decorations without compromising on quality.</p>
+                </div>
+                <div id="roasted-nibs" class="card-product">
+                    <div class="h-center-line">
+                        <h3>Roasted Cocoa Nibs</h3>
+                        <div></div>
+                    </div>
+                    <p>Experience the raw heart of Mexican cacao. Our nibs are carefully roasted and crushed to add a
+                        sophisticated crunch and a deep, nutty chocolate flavor to your recipes.</p>
+                </div>
+            </section>
         </section>
 
         <!--PART 3: explaining about us-->
