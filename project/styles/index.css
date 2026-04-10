@@ -1,33 +1,69 @@
-/*this one can be utilizable*/
-.container {
-    /*check*/
-    display: inline-block;
-    cursor: pointer;
+:root {
+    --color-olivegreen-5: #272b00;
+    --color-olivegreen-4: #54582f;
+    --color-olivegreen-3: #86895d;
+    --color-olivegreen-2: #bec092;
+    --color-olivegreen-1: #fdffe0;
+    /*i change color olive1*/
 }
 
-.menu1,
-.menu2,
-.menu3 {
-    width: 35px;
-    height: 5px;
-    /*check*/
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.change .menu1 {
-    transform: translate(0, 11px) rotate(-45deg);
+@font-face {
+    font-family: 'Sirenik';
+    src: url('sirenik-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.change .menu2 {
-    opacity: 0;
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
-.change .menu3 {
-    transform: translate(0, -11px) rotate(45deg);
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.navigation.open {
-    display: flex;
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-semibold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url('crimson-semibold-italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*playfair-display*/
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('playfairdisplay-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+absolute {
+    position: absolute;
 }
