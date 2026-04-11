@@ -274,6 +274,22 @@ h3 {
     font-size: small;
 }
 
+#dark-70 {
+    aspect-ratio: 380/606 !important;
+}
+
+#dark-65 {
+    aspect-ratio: 300/470 !important;
+}
+
+#dark-60 {
+    aspect-ratio: 300/470 !important;
+}
+
+#milk {
+    aspect-ratio: 401/621 !important;
+}
+
 
 @media (min-width: 837px) {
     .hero {
