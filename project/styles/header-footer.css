@@ -76,6 +76,11 @@ header {
     z-index: 6;
 }
 
+header span {
+    background-color: var(--color-olivegreen-5);
+    /*It was marking css */
+}
+
 .olive5 {
     background: var(--color-olivegreen-5);
 }
