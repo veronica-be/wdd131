@@ -73,6 +73,7 @@ header {
     position: sticky;
     top: 0;
     padding: 0.5rem 1rem;
+    z-index: 6;
 }
 
 .olive5 {
