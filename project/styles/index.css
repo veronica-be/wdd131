@@ -204,13 +204,25 @@ h3 {
     padding: 2rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--color-olivegreen-5);
-
+    aspect-ratio: 3/4;
 }
 
-#roasted-nibs,
-#cocoa,
-#white {
-    aspect-ratio: 3/4;
+
+#dark-70.card-product-img {
+    aspect-ratio: 380/606 !important;
+}
+
+#dark-65.card-product-img {
+    aspect-ratio: 300/470 !important;
+}
+
+#dark-60.card-product-img {
+    aspect-ratio: 300/470 !important;
+}
+
+#milk.card-product-img {
+    aspect-ratio: 401/621 !important;
+}
 }
 
 .card-content,
@@ -280,21 +292,7 @@ h3 {
     font-size: small;
 }
 
-#dark-70 {
-    aspect-ratio: 380/606 !important;
-}
 
-#dark-65 {
-    aspect-ratio: 300/470 !important;
-}
-
-#dark-60 {
-    aspect-ratio: 300/470 !important;
-}
-
-#milk {
-    aspect-ratio: 401/621 !important;
-}
 
 
 @media (min-width: 837px) {
