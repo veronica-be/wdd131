@@ -200,11 +200,16 @@ h3 {
 .card-product-img {
     background-color: var(--color-olivegreen-2);
     max-width: 100%;
-    aspect-ratio: 3/4;
     padding: 2rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--color-olivegreen-5);
 
+}
+
+#roasted-nibs,
+#cocoa,
+#white {
+    aspect-ratio: 3/4;
 }
 
 .card-content,
