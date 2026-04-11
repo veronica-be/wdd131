@@ -246,10 +246,11 @@ h3 {
 .follow-up-content {
     margin: 0;
     padding-bottom: 0.5rem;
-    height: 58%;
+    height: 55%;
     margin-top: auto;
     text-align: left;
     font-size: smaller;
+    z-index: 0;
 }
 
 .follow-up-content h2,
@@ -341,6 +342,7 @@ h3 {
 
     .button {
         margin-left: 10% !important;
+        margin-right: 35% !important;
         margin-bottom: 1rem;
     }
 
@@ -364,8 +366,8 @@ h3 {
 .button {
     display: flex-box;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 3%;
+    margin-right: 3%;
     display: block;
     background-color: var(--color-olivegreen-1);
     color: var(--color-olivegreen-5) !important;
