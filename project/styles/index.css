@@ -207,19 +207,6 @@ h3 {
     aspect-ratio: 3/4;
 }
 
-
-#dark-65.card-product-img {
-    aspect-ratio: 300/470 !important;
-}
-
-#dark-60.card-product-img {
-    aspect-ratio: 300/470 !important;
-}
-
-#milk.card-product-img {
-    aspect-ratio: 401/621 !important;
-}
-
 .card-content,
 .follow-up-content {
     background-color: rgba(39, 43, 0, 0.8);
