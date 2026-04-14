@@ -180,12 +180,6 @@
         margin-right: 0;
     }
 
-    .button {
-        margin-left: 10% !important;
-        margin-right: 35% !important;
-        margin-bottom: 1rem;
-    }
-
     .follow-up-content h2,
     .follow-up-content h3 {
         font-size: x-large;
@@ -199,32 +193,4 @@
         font-size: small !important;
     }
 
-}
-
-
-/* button like*/
-.button {
-    display: flex-box;
-    text-align: center;
-    margin-left: 3%;
-    margin-right: 3%;
-    display: block;
-    background-color: var(--color-olivegreen-1);
-    color: var(--color-olivegreen-5) !important;
-    border-radius: 50px;
-    padding: 0.6rem;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-
-}
-
-.button:active {
-    background-color: var(--color-olivegreen-4);
-    padding: 0.6rem;
-    color: var(--color-olivegreen-1) !important;
-}
-
-.button:hover {
-    text-decoration: underline;
 }

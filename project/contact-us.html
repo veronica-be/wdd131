@@ -9,9 +9,11 @@
         content="Have a question or need technical support? Contact the Avoranti team for professional guidance, product inquiries, and more. Let's craft excellence together.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
-    <link rel="stylesheet" href="styles/contact-form.css">
     <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/contact-us.js" defer></script>
 </head>
 
 <body>
@@ -57,49 +59,51 @@
                 <p>Please fill out the form below and our team will contact you shortly.</p>
                 <p><strong><em>* Required fields</em></strong></p>
             </div>
+            <div class="form-box">
+                <form method="get" action="confirmation.html">
+                    <label for="reason">Reason for contact <strong><em>*</em></strong></label>
+                    <select id="reason" name="reason" required>
+                        <option value="" disabled selected>Please select a reason</option>
+                        <option value="General Question">General Question</option>
+                        <option value="Product Review">Product
+                            Review</option>
+                        <option value="Claim">Submit a Claim</option>
+                        <option value="Buy Products">Buy Products</option>
+                    </select>
 
-            <form class="" method="get" action="confirmation.html">
-                <label for="reason">Reason for contact <strong><em>*</em></strong></label>
-                <select id="reason" name="reason" required>
-                    <option value="" disabled selected>Please select a reason</option>
-                    <option value="General Question">General Question</option>
-                    <option value="Product Review">Product
-                        Review</option>
-                    <option value="Claim">Submit a Claim</option>
-                </select>
+                    <label for="topic">Subject<strong><em>*</em></strong></label>
+                    <select id="topic" name="topic" disabled
+                        aria-label="Select a specific reason first before selecting a subject" required>
+                        <option value="" disabled selected>Please select a reason first</option>
+                    </select>
 
-                <label for="topic">Subject<strong><em>*</em></strong></label>
-                <select id="topic" name="topic" disabled
-                    aria-label="Select a specific reason first before selecting a subject" required>
-                    <option value="" disabled selected>Please select a reason first</option>
-                </select>
+                    <label for="message">Type here your message <strong><em>*</em></strong></label>
+                    <textarea id="message" name="review" rows="4" placeholder="Type here..." required></textarea>
 
-                <label for="message">Type here your message <strong><em>*</em></strong></label>
-                <textarea id="message" name="review" rows="4" placeholder="Type here..." required></textarea>
+                    <label for="name">Name <strong><em>*</em></strong></label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
 
-                <label for="name">Name <strong><em>*</em></strong></label>
-                <input type="text" id="name" name="name" placeholder="Name" required>
+                    <label for="last-name">Last names <em>(Optional)</em></label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last names">
 
-                <label for="last-name">Last names <em>(Optional)</em></label>
-                <input type="text" id="last-name" name="last-name" placeholder="Last names">
+                    <label for="email">E-mail <strong><em>*</em></strong></label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
 
-                <label for="email">E-mail <strong><em>*</em></strong></label>
-                <input type="email" id="email" name="email" placeholder="email@example.com" required>
-
-                <label for="tel">Telephone number <strong><em>*</em></strong></label>
-                <input type="tel" id="tel" name="tel" placeholder="+52 000 000 0000" required>
+                    <label for="tel">Telephone number <strong><em>*</em></strong></label>
+                    <input type="tel" id="tel" name="tel" placeholder="+52 000 000 0000" required>
 
 
-                <div>
-                    <input type="checkbox" id="accept-terms" name="terms" placeholder="+52 000 000 0000" required>
-                    <label for="accept-terms">Confirm that you have read and understood our website Terms of Use and
-                        Privacy
-                        Policy.<strong><em>*</em></strong></label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
-                </div>
+                    <div class="confirm">
+                        <input type="checkbox" id="accept-terms" name="terms" placeholder="+52 000 000 0000" required>
+                        <label for="accept-terms">Confirm that you have read and understood our website Terms of Use and
+                            Privacy
+                            Policy.<strong><em>*</em></strong></label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
+                    </div>
 
-                <input type="submit" value="Submit Message" class="submit-button">
+                    <input class="button" type="submit" value="SUBMIT MESSAGE" class="submit-button">
 
-            </form>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="olive5">
