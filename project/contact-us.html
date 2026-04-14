@@ -9,27 +9,57 @@
         content="Have a question or need technical support? Contact the Avoranti team for professional guidance, product inquiries, and more. Let's craft excellence together.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
+    <link rel="stylesheet" href="styles/contact-form.css">
     <link rel="stylesheet" href="styles/header-footer.css">
     <script src="scripts/header-footer.js" defer></script>
 </head>
 
 <body>
+    <header class="olive5">
+        <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
+                width="611px" height="350px" fetchpriority="auto">
+            <span class="olive5">AVORANTI</span></a>
 
-    <section>
-        <div>
-            <img src="" alt="" fetchpriority="high">
-            <h1>Get in Touch with Avoranti</h1>
-            <h2>How can we help you?</h2>
-            <p>At Avoranti, we value every interaction. Whether you have a technical question, a product review, or a
-                concern regarding our service, we are committed to listening and improving for you.</p>
-            <p>Please fill out the form below and our team will contact you shortly.</p>
-        </div>
+        <figure class="menu-container" onclick="menuShowMobile(this)"
+            title="Click to open or close the navigation menu">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+        </figure>
+        <nav class="navigation" id="navigation">
 
-        <form id="contactUs" method="get" action="confirmation.html">
-            <p><strong><em>*</strong> Required fields</em></p>
+            <ul>
 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact-us.html">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Here starts the main code for the form-->
+    <main>
+        <section class="form-box-bg">
+            <img class="form-bg" src="images/contact-us-background.avif"
+                alt="image of background of chocolate and cocoa powder">
             <div>
-                <label for="reason"></label>Reason for contact <strong><em>*</em></strong></label>
+                <img class="logo-main" src=" images/avoranti-yellow-big.svg" width="959px" height="693px"
+                    alt="Avoranti's logo of cacao" fetchpriority="high">
+                <div class=" h-center-line">
+                    <h1>Get in Touch with Avoranti</h1>
+                    <div class="olive1"></div>
+                </div>
+                <h2>How can we help you?</h2>
+                <p>At Avoranti, we value every interaction. Whether you have a technical question, a product review, or
+                    a
+                    concern regarding our service, we are committed to listening and improving for you.</p>
+                <p>Please fill out the form below and our team will contact you shortly.</p>
+                <p><strong><em>* Required fields</em></strong></p>
+            </div>
+
+            <form class="" method="get" action="confirmation.html">
+                <label for="reason">Reason for contact <strong><em>*</em></strong></label>
                 <select id="reason" name="reason" required>
                     <option value="" disabled selected>Please select a reason</option>
                     <option value="General Question">General Question</option>
@@ -37,48 +67,67 @@
                         Review</option>
                     <option value="Claim">Submit a Claim</option>
                 </select>
-            </div>
 
-            <div>
                 <label for="topic">Subject<strong><em>*</em></strong></label>
                 <select id="topic" name="topic" disabled
                     aria-label="Select a specific reason first before selecting a subject" required>
                     <option value="" disabled selected>Please select a reason first</option>
                 </select>
-            </div>
 
-            <div>
                 <label for="message">Type here your message <strong><em>*</em></strong></label>
                 <textarea id="message" name="review" rows="4" placeholder="Type here..." required></textarea>
-            </div>
 
-            <div>
                 <label for="name">Name <strong><em>*</em></strong></label>
                 <input type="text" id="name" name="name" placeholder="Name" required>
+
                 <label for="last-name">Last names <em>(Optional)</em></label>
                 <input type="text" id="last-name" name="last-name" placeholder="Last names">
-            </div>
 
-            <div>
                 <label for="email">E-mail <strong><em>*</em></strong></label>
                 <input type="email" id="email" name="email" placeholder="email@example.com" required>
-            </div>
 
-            <div>
                 <label for="tel">Telephone number <strong><em>*</em></strong></label>
                 <input type="tel" id="tel" name="tel" placeholder="+52 000 000 0000" required>
+
+
+                <div>
+                    <input type="checkbox" id="accept-terms" name="terms" placeholder="+52 000 000 0000" required>
+                    <label for="accept-terms">Confirm that you have read and understood our website Terms of Use and
+                        Privacy
+                        Policy.<strong><em>*</em></strong></label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
+                </div>
+
+                <input type="submit" value="Submit Message" class="submit-button">
+
+            </form>
+        </section>
+    </main>
+    <footer class="olive5">
+        <div><img id="logo-footer" src="images/avoranti-yellow-big.svg" width="959px" height="693px"
+                alt="Avoranti's logo of cacao" loading="lazy">
+        </div>
+
+        <div class="line-footer"></div>
+        <section class="footer-follow">
+            <p>FOLLOW US:</p>
+            <ul class="footer-apps">
+                <li><a aria-label="Click to open facebook page" href="https://www.facebook.com"><img width="256px"
+                            height="256px" src="images/facebook-logo.svg" alt="facebook logo" loading="lazy"></a></li>
+                <li><a aria-label="Click to open instagram page" href="https://www.instagram.com"><img
+                            src="images/instagram-logo.svg" width="256px" height="256px" alt="instagram logo"
+                            loading="lazy"></a></li>
+            </ul>
+        </section>
+        <div class="line-footer"></div>
+        <section>
+            <a href="reference.html">REFERENCES PAGE</a>
+            <div class="footer-reference">
+                <p>&copy;<span id="currentyear"></span> &#10070; AVORANTI | Veronica Becerra Estrada &#10070; Mexico.
+                </p>
+                <p id="lastModified"></p>
             </div>
-
-            <div>
-                <input type="checkbox" id="accept-terms" name="terms" placeholder="+52 000 000 0000" required>
-                <label for="accept-terms">Confirm that you have read and understood our website Terms of Use and Privacy
-                    Policy.<strong><em>*</em></strong></label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
-            </div>
-
-            <input type="submit" value="Submit Message" class="submit-button">
-
-        </form>
-    </section>
+        </section>
+    </footer>
 
 </body>
 
