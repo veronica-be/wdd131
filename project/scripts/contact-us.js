@@ -36,5 +36,3 @@ reasonSelect.addEventListener('change', function () {
         updateSubjectOptions(subjectsProducts);
     }
 });
-
-

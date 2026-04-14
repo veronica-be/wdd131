@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Avoranti</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-trazo-black.svg">
     <meta name="description"
         content="Have a question or need technical support? Contact the Avoranti team for professional guidance, product inquiries, and more. Let's craft excellence together.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
@@ -12,6 +13,7 @@
     <link rel="preload" href="styles/header-footer.css" as="style" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/contact-form.css">
+
 
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/contact-us.js" defer></script>
@@ -37,6 +39,7 @@
                 <li><a href="recipes.html">Recipes</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="contact-us.html">Contact-Us</a></li>
+
             </ul>
         </nav>
     </header>
@@ -44,15 +47,15 @@
     <!--Here starts the main code for the form-->
     <main>
         <section class="form-box-bg">
-            <img class="form-bg" src="images/contact-us-background.avif"
-                alt="image of background of chocolate and cocoa powder" fechpriority="high">
+            <picture fechpriority="high">
+                <source class="form-bg" media="(min-width: 837px)" srcset="images/background-form-desk.avif"
+                    alt="image of background of chocolate and cocoa powder">
+                <img class="form-bg" src="images/background-form-mobile.avif"
+                    alt="image of background of chocolate and cocoa powder">
+            </picture>
             <div>
-                <picture>
-                    <source class="logo-main" src=" images/avoranti-yellow-big.svg" width="959px" height="693px"
+                <img class="logo-main" src=" images/avoranti-yellow-big.svg" width="959px" height="693px"
                     alt="Avoranti's logo of cacao" fetchpriority="high">
-                    <img src="fallback-image.jpg" alt="Description of the image">
-                </picture>
-                <img 
                 <div class=" h-center-line">
                     <h1>Get in Touch with Avoranti</h1>
                     <div class="olive1"></div>
@@ -65,7 +68,7 @@
                 <p><strong><em>* Required fields</em></strong></p>
             </div>
             <div class="form-box">
-                <form method="get" action="confirmation.html">
+                <form id="contactUs" method="get" action="confirmation.html">
                     <label for="reason">Reason for contact <strong><em>*</em></strong></label>
                     <select id="reason" name="reason" required>
                         <option value="" disabled selected>Please select a reason</option>
@@ -73,7 +76,6 @@
                         <option value="Product Review">Product
                             Review</option>
                         <option value="Claim">Submit a Claim</option>
-                        <option value="Buy Products">Buy Products</option>
                     </select>
 
                     <label for="topic">Subject<strong><em>*</em></strong></label>
@@ -83,7 +85,7 @@
                     </select>
 
                     <label for="message">Type here your message <strong><em>*</em></strong></label>
-                    <textarea id="message" name="review" rows="4" placeholder="Type here..." required></textarea>
+                    <textarea id="message" name="review" rows="8" placeholder="Type here..." required></textarea>
 
                     <label for="name">Name <strong><em>*</em></strong></label>
                     <input type="text" id="name" name="name" placeholder="Name" required>
