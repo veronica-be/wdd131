@@ -5,26 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolate & Pastry News | Avoranti</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-trazo-black.svg">
     <meta name="description"
         content="Stay updated with Avoranti. Explore the latest news on chocolate, and exclusive coverage of the Coupe du Monde de la Pâtisserie.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
-    <link rel="stylesheet" href="">
-    <script src="" defer></script>
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/news-and-recipes.css">
+
+    <script src="scripts/header-footer.js" defer></script>
 </head>
 
 <body>
 
-    <header></header>
+    <header class="olive5">
+        <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
+                width="611px" height="350px" fetchpriority="auto">
+            <span class="olive5">AVORANTI</span></a>
+
+        <figure class="menu-container" onclick="menuShowMobile(this)"
+            title="Click to open or close the navigation menu">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+        </figure>
+        <nav class="navigation" id="navigation">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact-us.html">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <!-- Hero -->
-        <section>
-            <img src="" alt="" width="" height="" fetchpriority="high">
-            <h1>NEWS</h1>
+        <section class="hero">
+            <img id="hero-news" class="hero-bg" src="images/news-hero.avif"
+                alt="a happy team celebrating of winning first place" fetchpriority="high">
+            <div class="hero-content ">
+                <h1 class="color-white">NEWS</h1>
+            </div>
         </section>
         <!-- breadcrumb-->
-        <section>
+        <section class="breadcrumb">
             <nav>
                 <a href="index.html">Home</a>
                 <span>&middot;</span>
@@ -33,31 +60,61 @@
         </section>
 
         <!-- the page redirection to my page project-->
-        <section>
-            <a href="team-mexico.html">
-                <img src="" alt="">
-                <span>Special mention</span>
-                <time datetime="2021-09-25">September 25, 2021</time>
-                <h2>Mexico Shines in Lyon: 8th Place in the World</h2>
-                <p>We celebrate the incredible performance of Team Mexico at the <strong>2021 Pastry World Cup</strong>.
-                    Ranking in the
-                    global <strong>Top 10</strong>, our masters brought the soul of Mexican flavors to France, inspiring
-                    a
-                    new generation of
-                    chocolatiers.</p>
-                <!-- "a" button like css-->
-                <a href="team-mexico.html">Read article</a>
-            </a>
+        <section class="grid-miniatures">
+            <section class="miniature-container">
+                <article>
+                    <a href="team-mexico.html" class="miniature-link">
+                        <img src="images/team-mexico-2021.webp"
+                            alt="Two integrants of team mexico making the chocolate sculpture" class="miniature-img">
+                        <div class="miniature-info">
+                            <span class="miniature-tag">Special mention</span>
+                            <time class="miniature-date" datetime="2021-09-25">September 25, 2021</time>
 
+                            <h2 class="miniature-title">Mexico Shines in Lyon: 8th Place in the World</h2>
+
+                            <p class="miniature-text">
+                                We celebrate the incredible performance of Team Mexico at the
+                                <strong>2021 Pastry World Cup</strong>. Ranking in the global
+                                <strong>Top 10</strong>, our masters brought the soul of Mexican flavors...
+                            </p>
+
+                            <a class="button" href="team-mexico.html">Read article</a>
+                        </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
         </section>
+
 
 
     </main>
 
-    <footer>
+    <footer class="olive5">
+        <div><img id="logo-footer" src="images/avoranti-yellow-big.svg" width="959px" height="693px"
+                alt="Avoranti's logo of cacao" loading="lazy">
+        </div>
 
-
-
+        <div class="line-footer"></div>
+        <section class="footer-follow">
+            <p>FOLLOW US:</p>
+            <ul class="footer-apps">
+                <li><a aria-label="Click to open facebook page" href="https://www.facebook.com"><img width="256px"
+                            height="256px" src="images/facebook-logo.svg" alt="facebook logo" loading="lazy"></a></li>
+                <li><a aria-label="Click to open instagram page" href="https://www.instagram.com"><img
+                            src="images/instagram-logo.svg" width="256px" height="256px" alt="instagram logo"
+                            loading="lazy"></a></li>
+            </ul>
+        </section>
+        <div class="line-footer"></div>
+        <section>
+            <a href="reference.html">REFERENCES PAGE</a>
+            <div class="footer-reference">
+                <p>&copy;<span id="currentyear"></span> &#10070; AVORANTI | Veronica Becerra Estrada &#10070; Mexico.
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </section>
     </footer>
 </body>
 

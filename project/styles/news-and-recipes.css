@@ -5,12 +5,114 @@
 
 .breadcrumb {
     opacity: 0.7;
-    margin: 15px auto auto 15px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#hero-news {
+    background-color: var(--color-olivegreen-5);
+    filter: brightness(0.5)
+}
+
+.grid-miniatures {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 5% 90px;
+}
+
+.miniature-container {
+    background-color: var(--color-olivegreen-3);
+    padding: 0 0 35px 0;
+    max-width: 600px;
+}
+
+.miniature-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.miniature-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid var(--color-olivegreen-5);
+}
+
+.miniature-info {
+    background-color: var(--color-olivegreen-1);
+    margin: -80px 30px 0 30px;
+    padding: 25px;
+    color: var(--color-olivegreen-1);
+    position: relative;
+}
+
+.miniature-tag {
+    color: #c02a34;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.miniature-date {
+    font-size: 0.8rem;
+    display: block;
+    margin: 5px 0 20px 0;
+    opacity: 0.8;
+}
+
+.miniature-date,
+.miniature-title,
+.miniature-text {
+    color: var(--color-olivegreen-5);
+}
+
+.miniature-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.miniature-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 10px 0;
+}
+
+.button {
+    background-color: var(--color-olivegreen-2) !important;
+    margin-top: 1.5rem;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+
+}
+
+.button:active {
+    background-color: var(--color-olivegreen-3) !important;
+}
+
+.miniature-container:hover {
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 837px) {
     .breadcrumb {
         opacity: 0.7;
-        margin: 15px auto auto 15px;
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+
+    .grid-miniatures {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 50px 50px 20px;
+    }
+
+    .button {
+        display: block;
+        margin-left: auto !important;
     }
 }
