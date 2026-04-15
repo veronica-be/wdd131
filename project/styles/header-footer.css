@@ -100,7 +100,7 @@ header a.active {
 }
 
 header a.active img {
-    width: 150px;
+    width: 100px;
     height: auto;
     aspect-ratio: 611/350;
     margin: 0.5rem;
@@ -108,7 +108,7 @@ header a.active img {
 
 header a.active span {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.2em;
     font-family: 'Sirenik';
 }
@@ -205,6 +205,14 @@ footer,
 }
 
 @media (min-width: 837px) {
+    header a.active img {
+        width: 150px;
+    }
+
+    header a.active span {
+        font-size: 2rem;
+    }
+
     .menu-container {
         display: none;
     }
