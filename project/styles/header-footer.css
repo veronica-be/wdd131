@@ -108,7 +108,7 @@ header a.active img {
 
 header a.active span {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.2em;
     font-family: 'Sirenik';
 }
@@ -337,7 +337,8 @@ footer,
 .h-center-line {
     margin: auto;
     margin-top: 15%;
-    width: max-content;
+    width: 1fr;
+    flex-wrap: wrap;
     text-align: center;
     display: flex;
     flex-direction: column;
