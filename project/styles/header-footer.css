@@ -331,6 +331,8 @@ footer,
     margin-top: 15%;
     width: max-content;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .h-center-line div {
