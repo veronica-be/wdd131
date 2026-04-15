@@ -10,8 +10,9 @@
         content="Elevate your pastry skills with our professional chocolate recipes. From world-class desserts to artisanal techniques, discover how to use Avoranti products to bring your creative ideas to life.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
-    <link rel="stylesheet" href="styles/news-and-recipes.css">
+
     <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/news-and-recipes.css">
     <script src="scripts/header-footer.js" defer></script>
 </head>
 
@@ -60,14 +61,23 @@
         </section>
 
         <!-- the page redirection to the recipe-->
-        <section>
-            <a href="recipe.html">
-                <img src="" alt="">
-                <h2>Suspended honeycomb, the Italian CMP winning team's restaurant dessert</h2>
-                <!-- "a" button like css-->
-                <a href="recipe.html">See Details</a>
-            </a>
+        <section class="grid-miniatures">
+            <section class="miniature-container">
+                <article>
+                    <a href="recipe.html" class="miniature-link">
+                        <img src="images/honeycomb.webp"
+                            alt="Two integrants of team mexico making the chocolate sculpture" class="miniature-img">
+                        <div class="miniature-info">
 
+                            <h2 class="miniature-title">Suspended honeycomb, the Italian CMP winning team's restaurant
+                                dessert</h2>
+
+                            <a class="button" href="recipe.html">See details</a>
+                        </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
         </section>
 
 
