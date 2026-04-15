@@ -1,0 +1,71 @@
+figure.home a {
+    display: block;
+    position: absolute;
+    font-size: xxx-large;
+    text-decoration: none;
+    color: var(--color-olivegreen-1);
+
+}
+
+figure.home {
+    position: relative;
+    margin: 0 auto 0 2rem;
+}
+
+.h-center-line {
+    margin-top: 0rem !important;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#summary-container {
+    width: 85%;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: var(--color-olivegreen-4);
+    border-top: 5px solid var(--color-olivegreen-2);
+    border-bottom: 10px solid var(--color-olivegreen-2);
+}
+
+#summary-container p {
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.label {
+    font-family: 'Platfair Display';
+}
+
+.button {
+    width: 50%;
+    margin: 20px auto auto auto;
+}
+
+a {
+    color: var(--color-olivegreen-1);
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+@media (min-width: 837px) {
+    .button {
+        width: 30%;
+    }
+
+    #summary-container {
+        width: 65%;
+        padding: 2rem;
+    }
+
+    #summary-container p {
+        margin: 0 !important;
+        padding: 1rem 1rem 1rem 1rem !important
+    }
+
+    #summary-container hr {
+        width: 97%;
+        margin: auto;
+    }
+}
