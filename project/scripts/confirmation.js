@@ -10,7 +10,6 @@ const summaryObject = {
     "Telephone Number": params.get("tel")
 };
 
-/* Another function to the requirement */
 function renderSummary(dataObject) {
     const container = document.querySelector("#summary-container");
     if (!container) return;

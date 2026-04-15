@@ -9,7 +9,15 @@ figure.home a {
 
 figure.home {
     position: relative;
-    margin: 0 auto 0 2rem;
+    margin: 0 auto 0 1rem;
+}
+
+.logo-main {
+    margin-top: 75px;
+}
+
+.form-box-bg {
+    padding: 0 0 40px 0px;
 }
 
 .h-center-line {
@@ -67,5 +75,9 @@ a:hover {
     #summary-container hr {
         width: 97%;
         margin: auto;
+    }
+
+    figure.home {
+        margin: 1.5rem auto 0 2.5rem;
     }
 }
