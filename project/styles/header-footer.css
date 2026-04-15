@@ -337,7 +337,7 @@ footer,
 .h-center-line {
     margin: auto;
     margin-top: 15%;
-    width: 1fr;
+    width: fit-content;
     flex-wrap: wrap;
     text-align: center;
     display: flex;
