@@ -101,6 +101,7 @@ header a.active img {
 }
 
 header a.active span {
+    display: flex;
     font-size: 2rem;
     letter-spacing: 0.2em;
     font-family: 'Sirenik';
@@ -148,6 +149,10 @@ footer {
     padding: 2rem 0;
     gap: 5px;
     color: var(--color-olivegreen-1);
+}
+
+.footer-follow p {
+    padding: 0;
 }
 
 footer,
