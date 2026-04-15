@@ -84,9 +84,7 @@
 .button {
     background-color: var(--color-olivegreen-2) !important;
     margin-top: 1.5rem;
-    width: 90%;
-    display: flex;
-    justify-self: center;
+    width: 100%;
 
 }
 
@@ -111,8 +109,4 @@
         margin: 50px 50px 20px;
     }
 
-    .button {
-        display: block;
-        margin-left: auto !important;
-    }
 }

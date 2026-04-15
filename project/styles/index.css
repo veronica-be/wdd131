@@ -79,7 +79,7 @@
 }
 
 .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 #roasted-nibs {
@@ -91,10 +91,11 @@
 .follow-up-content {
     margin: 0;
     padding-bottom: 0.5rem;
+    width: 100%;
     height: 55%;
     margin-top: auto;
     text-align: left;
-    font-size: smaller;
+    font-size: normal;
     z-index: 0;
 }
 
@@ -102,7 +103,7 @@
 .follow-up-content h3 {
     color: var(--color-olivegreen-1);
     padding-left: 10%;
-    font-size: medium;
+    font-size: large;
     padding-top: 0.5rem;
 }
 
@@ -116,13 +117,21 @@
 }
 
 .follow-up-content h3 {
-    font-size: small;
+    font-size: normal;
+}
+
+.button {
+    margin: 1rem auto;
+    width: 80%;
+    text-align: center;
 }
 
 
 
-
 @media (min-width: 837px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .p-below-h1 {
         padding-right: 25%;

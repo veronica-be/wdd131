@@ -17,6 +17,12 @@ body {
     background-color: whitesmoke;
 }
 
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /*Header*/
 
 header,
@@ -259,8 +265,8 @@ footer,
     }
 
     .button {
-        margin-left: 10% !important;
-        margin-right: 35% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         margin-bottom: 1rem;
     }
 
