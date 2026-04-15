@@ -65,6 +65,16 @@ h2 {
 @media (min-width: 837px) {
 
     .form-box {
-        padding: 3% 30% 0% !important;
+        padding: 3% 22% 0% !important;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px;
+        font-family: 'Crimson';
+        background-color: var(--color-olivegreen-5);
+        border: 1px solid var(--color-olivegreen-1);
+        font-size: medium;
     }
 }
