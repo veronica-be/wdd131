@@ -1,3 +1,160 @@
 .honey-filter {
     filter: brightness(0.6);
 }
+
+.main-text-recipe {
+    background-color: var(--color-olivegreen-4);
+    padding-top: 6%;
+    padding-bottom: 6%;
+    clear: both;
+}
+
+.main-text-recipe p:nth-of-type(even) {
+    padding-top: 2rem;
+}
+
+.img-floated-left {
+    float: left;
+    width: 30%;
+    margin: 1.5% 2rem 1rem 10%;
+}
+
+.img-floated-left img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.separation {
+    letter-spacing: 0.45rem;
+}
+
+.grid-title-img {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 5rem 10%;
+    gap: 50px;
+}
+
+.grid-title-img img {
+    width: 100%;
+    height: auto;
+    border-top: 4px solid rgb(39, 43, 0, 0.2);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom: 4px solid rgb(39, 43, 0, 0.2)
+}
+
+.grid-title-img>div h2 {
+    font-size: xx-large;
+}
+
+.card-step {
+    display: grid;
+    margin: 0 10% 3% 10%;
+    border: 3px solid var(--color-olivegreen-3);
+    background-color: white;
+}
+
+.card-step p {
+    grid-area: 1/1/3/2;
+    color: var(--color-olivegreen-5);
+    font-size: xxx-large;
+    font-family: 'Playfair Display';
+}
+
+.card-step>p,
+.card-step h3 {
+    padding: 2rem;
+}
+
+.card-step h3 {
+    grid-area: 1/2/2/5;
+}
+
+.card-step>.step-ingredients {
+    grid-area: 2/2/3/3;
+    color: var(--color-olivegreen-4);
+}
+
+.card-step div,
+.card-step p,
+.grid-title-img>div {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-step div {
+    height: 79%;
+    width: 1px;
+    background-color: var(--color-olivegreen-4);
+    grid-area: 2/3/3/4;
+}
+
+.card-step>.step-procedure {
+    grid-area: 2/4/3/5;
+}
+
+.step-procedure,
+.step-ingredients {
+    padding: 1rem !important;
+}
+
+.step-procedure p,
+.step-ingredients ul {
+    font-size: 1rem;
+    font-family: 'Crimson';
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+.step-ingredients li {
+    list-style: none;
+}
+
+@media (min-width: 837px) {
+    .img-floated-left {
+        padding: 0;
+        margin-top: 0;
+        width: max-content;
+    }
+
+    .img-floated-left img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .grid-title-img {
+        grid-template-columns: auto 40%;
+        gap: 0px;
+        margin: 2rem 10% 2rem 10%;
+    }
+
+    .grid-title-img img {
+        border-left: 5px solid rgb(39, 43, 0, 0.1);
+        border-top: none;
+        border-bottom: none;
+        border-right: 5px solid rgb(39, 43, 0, 0.1);
+        ;
+    }
+
+    .grid-title-img>div {
+        margin-left: 0;
+    }
+
+    .grid-title-img>div>div {
+        margin-left: 30px;
+    }
+
+    section:nth-child(1 of .card-step) {
+        margin-top: 5rem;
+    }
+
+    section:nth-last-child(1 of .card-step) {
+        margin-bottom: 7rem;
+    }
+
+}
