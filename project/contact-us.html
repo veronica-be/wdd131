@@ -9,6 +9,14 @@
     <meta name="description"
         content="Have a question or need technical support? Contact the Avoranti team for professional guidance, product inquiries, and more. Let's craft excellence together.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
+    <link rel="preload" as="style" href="styles/header-footer.css">
+    <link rel="preload" as="style" href="styles/contact-form.css">
+    <link rel="preload" as="style" href="styles/rules-contact-us-confirmation.css">
+
+    <link rel="preload" as="image" href="images/background-form-mobile.avif" media="(max-width: 836px)"
+        fetchpriority="high">
+    <link rel="preload" as="image" href="images/background-form-desk.avif" media="(min-width: 837px)"
+        fetchpriority="high">
 
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/contact-us.js" defer></script>
@@ -47,12 +55,12 @@
     <main>
         <section class="form-box-bg">
             <picture>
-                <source class="form-bg" media="(min-width: 837px)" srcset="images/background-form-desk.avif">
-                <img class="form-bg" fetchpriority="high" src="images/background-form-mobile.avif"
-                    alt="image of background of cocoa powder">
+                <source media="(min-width: 837px)" srcset="images/background-form-desk.avif">
+                <img class="form-bg" fetchpriority="high" src="images/background-form-mobile.avif" width="2134"
+                    height="2668" alt="image of background of cocoa powder">
             </picture>
             <div>
-                <img class="logo-main" src=" images/avoranti-yellow-big.svg" width="959" height="693"
+                <img class="logo-main" src="images/avoranti-yellow-big.svg" width="959" height="693"
                     alt="Avoranti's logo of cacao" fetchpriority="high">
                 <div class=" h-center-line">
                     <h1>Get in Touch with Avoranti</h1>
