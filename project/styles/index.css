@@ -100,7 +100,6 @@
     height: 55%;
     margin-top: auto;
     text-align: left;
-    font-size: normal;
     z-index: 0;
 }
 
@@ -117,12 +116,7 @@
 }
 
 .follow-up-content p {
-    line-height: normal;
     padding-bottom: 0.5rem;
-}
-
-.follow-up-content h3 {
-    font-size: normal;
 }
 
 .button {
@@ -197,10 +191,6 @@
     .follow-up-content h2,
     .follow-up-content h3 {
         font-size: x-large;
-    }
-
-    .follow-up-content p {
-        line-height: medium;
     }
 
     .follow-up-content h3 {
