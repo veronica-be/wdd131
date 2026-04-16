@@ -66,9 +66,13 @@
             <div class="miniature-container">
                 <article>
                     <div class="miniature-link">
-                        <img src="images/honeycomb.webp" width="900" height="600"
-                            alt="Italian dessert: honeycomb. In shape of a bee and a honeycomb wafer on top."
-                            class="miniature-img">
+                        <picture>
+                            <source media=" (min-width: 837px)" srcset="images/honeycomb-mobile.avif">
+                            <img src="images/honeycomb.webp" width="900" height="600"
+                                alt="Italian dessert: honeycomb. In shape of a bee and a honeycomb wafer on top."
+                                class="miniature-img" loading="lazy">
+                        </picture>
+
                         <div class="miniature-info">
 
                             <h2 class="miniature-title">Suspended honeycomb, the Italian CMP winning team's restaurant
