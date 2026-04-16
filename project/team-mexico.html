@@ -5,117 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Mexico | 8th Place at the 2021 World Pastry Cup | Avoranti</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-trazo-black.svg">
     <meta name="description"
         content="Come and celebrate with Avoranti Team Mexico's historic 8th place at the Coupe du Monde de la Pâtisserie 2021. Know about the team that make it possible.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
 
-    <link rel="stylesheet" href="">
-    <script src="" defer></script>
+    <link rel="stylesheet" href="styles/header-footer.css" fechpriority="high">
+    <link rel="stylesheet" href="styles/team-mexico.css" fechpriority="high">
+    <script src="scripts/header-footer.js" defer fechpriority="high"></script>
 
 </head>
 
 <body>
 
-    <header></header>
+    <header class="olive5">
+        <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
+                width="611px" height="350px" fetchpriority="auto">
+            <span class="olive5">AVORANTI</span></a>
+
+        <figure class="menu-container" onclick="menuShowMobile(this)"
+            title="Click to open or close the navigation menu">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+        </figure>
+        <nav class="navigation" id="navigation">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact-us.html">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <!-- the header of page info-->
-        <section>
-
-            <img src="" alt="" width="" height="" fetchpriority="high">
-            <h1>Mexico classifies in the Top 10 at the Wold Pastry Cup 2021</h1>
-
+        <section class="hero">
+            <img class="hero-bg filter" src="images/hero-team-mexico-desk.avif"
+                alt="team mexico at the world pastry cup 2021" fetchpriority="high">
+            <div class="hero-content">
+                <h1 class="color-white">Mexico Top 10 in <br>World Pastry Cup 2021</br></h1>
+            </div>
         </section>
 
-
         <section>
-            <!-- Part 1 What is the world pstry cup? -->
-            <article>
-
+            <!-- Part 1 What is the world pastry cup? -->
+            <article class="text">
                 <h2>What is the Coupe du Monde de la Pâtisserie (World Pastry cup)?</h2>
-                <img src="" alt="Pastry Chef: Gabriel Paillasson" loading="lazy">
+                <img class="img-floated-left " src="images/paillasson-cover.avif" alt="Pastry Chef: Gabriel Paillasson"
+                    loading="lazy">
                 <p> The <strong>Coupe du Monde de la Pâtisserie</strong> (World Pastry Cup) is the most prestigious
                     pastry competition in the world. It was founded in <strong>1989</strong> by the legendary French
-                    pastry chef Gabriel Paillasson, who envisioned a global stage to showcase the technical mastery and
+                    pastry chef Gabriel Paillasson, who envisioned a global stage to showcase the technical mastery
+                    and
                     artistic excellence of the pastry profession. </p>
-                <p>As Paillasson once said:</p>
-                <blockquote><em>"It was a magnificent event with an amazing atmosphere that reflects pastry's
-                        evolution in
-                        the world."</em></blockquote>
+                <p>As Paillasson once said:
+                    <q><em>It was a magnificent event with an amazing atmosphere that reflects pastry's
+                            evolution in
+                            the world.</em></q>
+                </p>
 
                 <!-- collapsible information -->
-                <!-- 2 year-->
-                <details>
-                    <summary>The Competition Cycle</summary>
-                    <p>The event operates on a <strong>bi-annual cycle</strong> (every two years). To reach the Grand
-                        Final in <strong>Lyon, France</strong>, teams must navigate a rigorous selection process: </p>
-                    <ul>
-                        <li><strong>National Selections:</strong> Over 50 countries hold internal competitions to find
-                            their best talent.</li>
+                <section class="details">
+                    <details>
+                        <summary>The Competition Cycle</summary>
+                        <p>The event operates on a <strong>bi-annual cycle</strong> (every two years). To reach the
+                            Grand
+                            Final in <strong>Lyon, France</strong>, teams must navigate a rigorous selection process:
+                        </p>
+                        <ul>
+                            <li><strong>National Selections:</strong> Over 50 countries hold internal competitions to
+                                find
+                                their best talent.</li>
 
-                        <li><strong>Continental Selections:</strong> Qualifying teams move to continental rounds
-                            (Americas, Europe, Asia-Pacific, Africa, and Middle East) to win their spot in the final.
-                        </li>
+                            <li><strong>Continental Selections:</strong> Qualifying teams move to continental rounds
+                                (Americas, Europe, Asia-Pacific, Africa, and Middle East) to win their spot in the
+                                final.
+                            </li>
 
-                        <li><strong>Grand Final:</strong> The top 20 countries face off in a live battle at the Sirha
-                            trade show in Lyon. Each team has exactly 10 hours to complete all their tests. The live
-                            event lasts 2 days.</li>
-                    </ul>
-                </details>
+                            <li><strong>Grand Final:</strong> The top 20 countries face off in a live battle at the
+                                Sirha
+                                trade show in Lyon. Each team has exactly 10 hours to complete all their tests. The live
+                                event lasts 2 days.</li>
+                        </ul>
+                    </details>
 
-                <!-- team roles-->
-                <details>
-                    <summary>Team Composition and Roles</summary>
-                    <p>Candidates must typically have at least <strong>5 years of professional experience</strong>. Each
-                        country must have a recognized national club to enter the competition.</p>
-                    <p>A standard team consists of:</p>
-                    <ul>
-                        <li><strong>Chocolatier:</strong> Specialized in artistic chocolate sculptures and candies.</li>
+                    <!-- team roles-->
+                    <details>
+                        <summary>Team Composition and Roles</summary>
+                        <p>Candidates must typically have at least <strong>5 years of professional experience</strong>.
+                            Each
+                            country must have a recognized national club to enter the competition.</p>
+                        <p>A standard team consists of:</p>
+                        <ul>
+                            <li><strong>Chocolatier:</strong> Specialized in artistic chocolate sculptures and candies.
+                            </li>
 
-                        <li><strong>Sugar Artist:</strong> Expert in pulled, blown, and cast sugar showpieces.</li>
+                            <li><strong>Sugar Artist:</strong> Expert in pulled, blown, and cast sugar showpieces.</li>
 
-                        <li><strong>Frozen Dessert Specialist:</strong> Focused on ice sculpting and frozen entremets.
-                        </li>
+                            <li><strong>Frozen Dessert Specialist:</strong> Focused on ice sculpting and frozen
+                                entremets.
+                            </li>
 
-                        <li><strong>Team Leader / President:</strong> Usually a renowned chef who guides the team and
-                            serves as a jury member (grading other teams, but never their own).</li>
-                    </ul>
-                </details>
-                <!-- categories collapsible-->>
-                <details>
-                    <summary>Categories & Themes</summary>
-                    <ul>
-                        <li><strong>Categories:</strong> Teams must create a series of tasting desserts (iced fruit
-                            desserts, restaurant-style desserts) and spectacular artistic sculptures in chocolate,
-                            sugar,
-                            and sculpted ice.</li>
-                        <li><strong>Themes:</strong> Each edition has a mandatory theme. For example, the 2021 theme was
-                            <q>All Art is an Imitation of Nature</q>
-                        </li>
-                    </ul>
+                            <li><strong>Team Leader / President:</strong> Usually a renowned chef who guides the team
+                                and
+                                serves as a jury member (grading other teams, but never their own).</li>
+                        </ul>
+                    </details>
+                    <!-- categories collapsible-->
+                    <details>
+                        <summary>Categories & Themes</summary>
+                        <ul>
+                            <li><strong>Categories:</strong> Teams must create a series of tasting desserts (iced fruit
+                                desserts, restaurant-style desserts) and spectacular artistic sculptures in chocolate,
+                                sugar,
+                                and sculpted ice.</li>
+                            <li><strong>Themes:</strong> Each edition has a mandatory theme. For example, the 2021 theme
+                                was
+                                <q>All Art is an Imitation of Nature</q>
+                            </li>
+                        </ul>
 
-                </details>
+                    </details>
 
-                <details>
-                    <summary>Individual and Technical Special Prizes</summary>
-                    <img src="" alt="" loading="lazy">
-                    <p>The highest honor is the Gold Medal (World Champion Title) 1st Place.</p>
+                    <details>
+                        <summary>Individual and Technical Special Prizes</summary>
+                        <img src="" alt="" loading="lazy">
+                        <p>The highest honor is the Gold Medal (World Champion Title) 1st Place.</p>
 
-                    <p>They also give trophies for the best of each disipline:</p>
-                    <ul>
-                        <li><strong>Chocolate Prize:</strong> Awarded for the most exceptional chocolate sculpture and
-                            tasting quality.</li>
-                        <li><strong>Sugar Prize:</strong> Given to the expert who demonstrates the best technique in
-                            pulled, blown, and
-                            cast sugar.</li>
-                        <li><strong>Frozen Dessert / Ice Prize:</strong> Recognizes mastery in ice carving and frozen
-                            entremets.</li>
-                        <li><strong>Vase de Sèvres:<strong></strong> A porcelain trophy donated by the President of the
-                                French
-                                Republic, awarded to the team with the highest score in "Buffet Presentation."
-                    </ul>
+                        <p>They also give trophies for the best of each disipline:</p>
+                        <ul>
+                            <li><strong>Chocolate Prize:</strong> Awarded for the most exceptional chocolate sculpture
+                                and
+                                tasting quality.</li>
+                            <li><strong>Sugar Prize:</strong> Given to the expert who demonstrates the best technique in
+                                pulled, blown, and
+                                cast sugar.</li>
+                            <li><strong>Frozen Dessert / Ice Prize:</strong> Recognizes mastery in ice carving and
+                                frozen
+                                entremets.</li>
+                            <li><strong>Vase de Sèvres:<strong></strong> A porcelain trophy donated by the President of
+                                    the
+                                    French
+                                    Republic, awarded to the team with the highest score in "Buffet Presentation."
+                        </ul>
 
-                </details>
+                    </details>
+                </section>
             </article>
         </section>
         <h2>Mexico's path to the World Cup</h2>
@@ -294,7 +333,32 @@
     </main>
 
 
-    <footer></footer>
+    <footer class="olive5">
+        <div><img id="logo-footer" src="images/avoranti-yellow-big.svg" width="959px" height="693px"
+                alt="Avoranti's logo of cacao" loading="lazy">
+        </div>
+
+        <div class="line-footer"></div>
+        <section class="footer-follow">
+            <p>FOLLOW US:</p>
+            <ul class="footer-apps">
+                <li><a aria-label="Click to open facebook page" href="https://www.facebook.com"><img width="256px"
+                            height="256px" src="images/facebook-logo.svg" alt="facebook logo" loading="lazy"></a></li>
+                <li><a aria-label="Click to open instagram page" href="https://www.instagram.com"><img
+                            src="images/instagram-logo.svg" width="256px" height="256px" alt="instagram logo"
+                            loading="lazy"></a></li>
+            </ul>
+        </section>
+        <div class="line-footer"></div>
+        <section>
+            <a href="reference.html">REFERENCES PAGE</a>
+            <div class="footer-reference">
+                <p>&copy;<span id="currentyear"></span> &#10070; AVORANTI | Veronica Becerra Estrada &#10070; Mexico.
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </section>
+    </footer>
 
 </body>
 

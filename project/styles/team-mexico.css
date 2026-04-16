@@ -1,0 +1,64 @@
+.filter {
+    filter: brightness(0.5)
+}
+
+.text {
+    background-color: var(--color-olivegreen-4);
+    padding-top: 6%;
+    padding-bottom: 4%;
+    clear: both;
+}
+
+.text h2,
+.details ul {
+    background-color: var(--color-olivegreen-4);
+    padding: 2rem 10%;
+    clear: both;
+    color: var(--color-olivegreen-1)
+}
+
+.text p:not(:first-of-type) {
+    padding-top: 2rem;
+}
+
+.img-floated-left {
+    float: left;
+    width: 30%;
+    margin: 1.5% 2rem 1rem 10%;
+}
+
+.img-floated-left img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    margin: 3rem 10% 2rem;
+}
+
+.details summary {
+    font-family: 'Playfair Display';
+    color: var(--color-olivegreen-1);
+    background-color: var(--color-olivegreen-5);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: 1px solid var(--color-olivegreen-2);
+    margin-top: 0.3rem;
+}
+
+@media (min-width: 837px) {
+    .img-floated-left {
+        padding: 0;
+        margin-top: 0;
+        width: 150px;
+    }
+
+    .text h2 {
+        padding: 0rem 10% 4rem;
+
+    }
+
+    .details {
+        margin: 5rem 10% 0rem;
+    }
+}
