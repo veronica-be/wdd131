@@ -9,8 +9,8 @@
     <meta name="description"
         content="Discover Avoranti, Mexico's premium bean-to-bar chocolate provider. Over 20 years of expertise offering exceptional taste and consistent quality for pastry chefs and chocolatiers worldwide.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
-    <link rel="preload" as="style" href="styles/index.css" fetchpriority="high">
-    <link rel="preload" as="style" href="styles/header-footer.css" fetchpriority="high">
+    <link rel="preload" as="style" href="styles/index.css">
+    <link rel="preload" as="style" href="styles/header-footer.css">
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header-footer.css">
@@ -20,7 +20,7 @@
 <body>
     <header class="olive5">
         <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
-                width="611" height="350" fetchpriority="auto">
+                width="611" height="350" fetchpriority="high">
             <span class="olive5">AVORANTI</span></a>
 
         <figure class="menu-container" onclick="menuShowMobile(this)"
@@ -45,6 +45,7 @@
         <!-- Main Heading of page section part, hero image-->
         <section class="hero">
             <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-index-small.avif">
                 <source class="hero-bg" media=" (min-width: 837px)" srcset="images/hero-index.avif" title="Figure 1">
                 <img class="hero-bg " fetchpriority="high" src="images/hero-index-mobile.avif"
                     alt="chocolate pieces and cocoa powder (if you can't see image try an updated browser cause is an .avif)">
