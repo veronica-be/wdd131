@@ -45,9 +45,13 @@
     <main>
         <!-- Main Heading of page section part, hero image-->
         <section class="hero">
-            <img class="hero-bg" src="images/hero-index.avif"
-                alt="chocolate and cocoa (if you can't see image try an updated browser cause is an .avif)"
-                title="Figure 1" fetchpriority="high">
+            <picture>
+                <source class="hero-bg" media=" (min-width: 837px)" srcset="images/hero-index.avif"
+                    alt="chocolate and cocoa (if you can't see image try an updated browser cause is an .avif)"
+                    title="Figure 1" fechpriority="high">
+                <img class="hero-bg honey-filter" fechpriority="high" src="images/hero-index-mobile.avif"
+                    alt="chocolate and cocoa (if you can't see image try an updated browser cause is an .avif)">
+            </picture>
             <div class="hero-content ">
                 <h1 class="color-white">MASTERS <br>OF<br> FLAVOR</h1>
                 <p class="hero-content color-white">Delighted to delight you</p>
@@ -73,9 +77,12 @@
             <section class="product-grid">
                 <div id="dark-70" class="card-product">
                     <div></div>
-                    <img class="card-product-img" src="images/dark-70.webp" width="300px" height="459px"
-                        alt="dark chocolate 70% product Avoranti" loading="lazy">
-
+                    <picture>
+                        <source class="card-product-img" media=" (min-width: 837px)" srcset="images/dark-70-desk.webp"
+                            alt="dark chocolate 70% product Avoranti" loading="lazy">
+                        <img class="card-product-img" src="images/dark-70.webp" width="433px" height="577px"
+                            alt="dark chocolate 70% product Avoranti" loading="lazy">
+                    </picture>
                     <div class="h-center-line">
                         <h3>Dark Chocolate 70%</h3>
                         <div></div>
@@ -87,8 +94,13 @@
 
                 <div id="dark-65" class="card-product">
                     <div></div>
-                    <img class="card-product-img" src="images/dark-65.webp" width="483px" height="857px"
-                        alt="dark chocolate 65% product Avoranti" loading="lazy">
+                    <picture>
+                        <source class="card-product-img" media=" (min-width: 837px)" srcset="images/dark-65-desk.webp"
+                            alt="dark chocolate 65% product Avoranti" loading="lazy">
+                        <img class="card-product-img" src="images/dark-65.webp" width="433px" height="577px"
+                            alt="dark chocolate 65% product Avoranti" loading="lazy">
+                    </picture>
+
                     <div class="h-center-line">
                         <h3>Dark Chocolate 65%</h3>
                         <div></div>
@@ -100,8 +112,13 @@
 
                 <div id="dark-60" class="card-product">
                     <div></div>
-                    <img class="card-product-img" src="images/dark-60.webp" width="384px" height="682px"
-                        alt="dark chocolate 60% product Avoranti" loading="lazy">
+                    <picture>
+                        <source class="card-product-img" media=" (min-width: 837px)" srcset="images/dark-60-desk.webp"
+                            alt="dark chocolate 60% product Avoranti" loading="lazy">
+                        <img class="card-product-img" src="images/dark-60.webp" width="433px" height="577px"
+                            alt="dark chocolate 60% product Avoranti" loading="lazy">
+                    </picture>
+
                     <div class="h-center-line">
                         <h3>Dark Chocolate 60%</h3>
                         <div></div>
@@ -112,8 +129,13 @@
 
                 <div id="milk" class="card-product">
                     <div></div>
-                    <img class="card-product-img" src="images/milk-chocolate.webp" width="390px" height="693px"
-                        alt="milk chocolate product Avoranti" loading="lazy">
+                    <picture>
+                        <source class="card-product-img" media=" (min-width: 837px)"
+                            srcset="images/milk-chocolate-desk.webp" alt="milk chocolate product Avorant"
+                            loading="lazy">
+                        <img class="card-product-img" src="images/milk-chocolate.webp" width="433px" height="577px"
+                            alt="milk chocolate product Avoranti" loading="lazy">
+                    </picture>
                     <div class="h-center-line">
                         <h3>Milk Chocolate</h3>
                         <div></div>
