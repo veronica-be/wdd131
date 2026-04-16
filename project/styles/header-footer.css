@@ -277,9 +277,9 @@ footer,
     }
 
     .button {
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-bottom: 1rem;
+        margin: 1rem auto;
+        width: 80%;
+        text-align: center;
     }
 
 }

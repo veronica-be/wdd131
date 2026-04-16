@@ -115,14 +115,6 @@
     padding-bottom: 0.5rem;
 }
 
-.button {
-    margin: 1rem auto;
-    width: 80%;
-    text-align: center;
-}
-
-
-
 @media (min-width: 837px) {
     .grid-3 {
         grid-template-columns: repeat(3, 1fr);
