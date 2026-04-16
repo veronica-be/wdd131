@@ -35,6 +35,7 @@
     height: auto;
     display: block;
     border-bottom: 3px solid var(--color-olivegreen-5);
+    aspect-ratio: 3/2;
 }
 
 .miniature-info {
