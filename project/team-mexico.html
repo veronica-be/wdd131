@@ -9,11 +9,15 @@
     <meta name="description"
         content="Come and celebrate with Avoranti Team Mexico's historic 8th place at the Coupe du Monde de la Pâtisserie 2021. Know about the team that make it possible.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
+
+    <link rel="preload" as="style" href="styles/header-footer.css">
+    <link rel="preload" as="style" href="styles/team-mexico.css">
     <link rel="preload" as="image" href="images/logo-trazo.svg">
+    <link rel="preload" as="image" href="images/hero-team-mexico-desk.avif">
 
     <link rel="stylesheet" href="styles/header-footer.css" fetchpriority="high">
     <link rel="stylesheet" href="styles/team-mexico.css" fetchpriority="high">
-    <script src="scripts/header-footer.js" defer fetchpriority="high"></script>
+    <script src="scripts/header-footer.js" defer></script>
 
 </head>
 
@@ -21,7 +25,7 @@
 
     <header class="olive5">
         <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
-                width="611" height="350" fetchpriority="auto">
+                width="611" height="350" fetchpriority="high">
             <span class="olive5">AVORANTI</span></a>
 
         <figure class="menu-container" onclick="menuShowMobile(this)"
