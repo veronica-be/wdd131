@@ -2,12 +2,60 @@
     filter: brightness(0.5)
 }
 
+.text>summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.text>summary::-webkit-details-marker {
+    display: none;
+}
+
+.text>summary h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    color: var(--color-olivegreen-1);
+}
+
+.top {
+    z-index: 0;
+}
+
+.top-padding {
+    padding-top: 3rem;
+}
+
+.margin {
+    width: 80%;
+    margin: auto;
+}
+
+.marker {
+    font-size: 4rem;
+    color: var(--color-olivegreen-2);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    line-height: 1;
+}
+
+.text[open] .marker {
+    transform: rotate(45deg);
+}
+
 .text {
     background-color: var(--color-olivegreen-4);
-    padding-top: 6%;
-    padding-bottom: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     clear: both;
 }
+
+.border-bottom {
+    border-bottom: 10px solid var(--color-olivegreen-1);
+    padding-bottom: 8rem;
+}
+
 
 .text h2,
 .details ul {
@@ -32,18 +80,35 @@
     height: auto;
 }
 
-.details {
-    margin: 3rem 10% 2rem;
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 10%;
 }
 
-.details summary {
-    font-family: 'Playfair Display';
-    color: var(--color-olivegreen-1);
+.card {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
     background-color: var(--color-olivegreen-5);
-    padding: 1rem 3rem;
-    border-radius: 50px;
-    border: 1px solid var(--color-olivegreen-2);
-    margin-top: 0.3rem;
+    padding: 0.75rem 1rem;
+}
+
+.card-body p {
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: left;
 }
 
 @media (min-width: 837px) {
@@ -51,6 +116,11 @@
         padding: 0;
         margin-top: 0;
         width: 150px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 10%;
     }
 
     .text h2 {
