@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVORANTI | Premium Mexican Chocolate</title>
@@ -10,18 +9,18 @@
     <meta name="description"
         content="Discover Avoranti, Mexico's premium bean-to-bar chocolate provider. Over 20 years of expertise offering exceptional taste and consistent quality for pastry chefs and chocolatiers worldwide.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
-    <link rel="preload" as="style" href="styles/index.css" fechpriority="high">
-    <link rel="preload" as="style" href="styles/header-footer.css" fechpriority="high">
+    <link rel="preload" as="style" href="styles/index.css">
+    <link rel="preload" as="style" href="styles/header-footer.css">
 
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/header-footer.css">
-    <script src="scripts/header-footer.js" defer fechpriority="high"></script>
+    <link rel="stylesheet" href="styles/index.css" fechpriority="high">
+    <link rel="stylesheet" href="styles/header-footer.css" fechpriority="high">
+    <script src="scripts/header-footer.js" defer></script>
 </head>
 
 <body>
     <header class="olive5">
         <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
-                width="611px" height="350px" fetchpriority="auto">
+                width="611" height="350" fetchpriority="auto">
             <span class="olive5">AVORANTI</span></a>
 
         <figure class="menu-container" onclick="menuShowMobile(this)"
@@ -45,10 +44,8 @@
     <main>
         <!-- Main Heading of page section part, hero image-->
         <section class="hero">
-            <picture>
-                <source class="hero-bg" media=" (min-width: 837px)" srcset="images/hero-index.avif"
-                    alt="chocolate and cocoa (if you can't see image try an updated browser cause is an .avif)"
-                    title="Figure 1" fechpriority="high">
+            <picture fechpriority="high">
+                <source class="hero-bg" media=" (min-width: 837px)" srcset="images/hero-index.avif" title="Figure 1">
                 <img class="hero-bg honey-filter" fechpriority="high" src="images/hero-index-mobile.avif"
                     alt="chocolate and cocoa (if you can't see image try an updated browser cause is an .avif)">
             </picture>
