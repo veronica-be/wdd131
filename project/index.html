@@ -11,8 +11,10 @@
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
     <link rel="preload" as="style" href="styles/index.css">
     <link rel="preload" as="style" href="styles/header-footer.css">
-    <link rel="preload" as="image" href="images/hero-index-mobile.avif">
-    <link rel="preload" as="image" href="images/hero-index-small.avif">
+    <link rel="preload" as="image" href="images/hero-index-small.avif" media="(max-width: 420px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-index-mobile.avif"
+        media="(min-width: 421px) and (max-width: 836px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-index.avif" media="(min-width: 837px)" fetchpriority="high">
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header-footer.css">
@@ -48,7 +50,7 @@
         <section class="hero">
             <picture>
                 <source media="(max-width: 420px)" srcset="images/hero-index-small.avif">
-                <source class="hero-bg" media=" (min-width: 837px)" srcset="images/hero-index.avif" title="Figure 1">
+                <source class="hero-bg" media=" (max-width: 837px)" srcset="images/hero-index.avif" title="Figure 1">
                 <img class="hero-bg " src="images/hero-index-mobile.avif"
                     alt="chocolate pieces and cocoa powder (if you can't see image try an updated browser cause is an .avif)"
                     fetchpriority="high">
