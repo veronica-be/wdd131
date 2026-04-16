@@ -9,6 +9,10 @@
     <meta name="description"
         content="Stay updated with Avoranti. Explore the latest news on chocolate, and exclusive coverage of the Coupe du Monde de la Pâtisserie.">
     <meta name="author" content="Avoranti | Veronica Becerra Estrada">
+    <link rel="preload" as="style" href="styles/header-footer.css">
+    <link rel="preload" as="style" href="styles/news-and-recipes.css">
+    <link rel="preload" as="image" href="images/news-hero-mobile.avif" media="(max-width: 836px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/news-hero.avif" media="(min-width: 837px)" fetchpriority="high">
 
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/news-and-recipes.css">
@@ -20,7 +24,7 @@
 
     <header class="olive5">
         <a class="active" href="index.html"><img class="logo-nav" src="images/logo-trazo.svg" alt="Logo of Avoranti"
-                width="611" height="350" fetchpriority="auto">
+                width="611" height="350" fetchpriority="high">
             <span class="olive5">AVORANTI</span></a>
 
         <figure class="menu-container" onclick="menuShowMobile(this)"
@@ -44,8 +48,11 @@
     <main>
         <!-- Hero -->
         <section class="hero">
-            <img id="hero-news" class="hero-bg" src="images/news-hero.avif"
-                alt="a happy team celebrating of winning first place" fetchpriority="high">
+            <picture>
+                <source media="(max-width: 836px)" srcset="images/news-hero-mobile.avif">
+                <img id="hero-news" class="hero-bg" src="images/news-hero.avif"
+                    alt="a happy team celebrating of winning first place" fetchpriority="high">
+            </picture>
             <div class="hero-content ">
                 <h1 class="color-white">NEWS</h1>
             </div>
