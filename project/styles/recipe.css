@@ -83,7 +83,7 @@
     grid-area: 2/2/3/3;
 }
 
-.card-step div,
+.visual-separator,
 .card-step p,
 .grid-title-img>div {
     display: flex;
@@ -91,7 +91,7 @@
     justify-self: center;
 }
 
-.card-step div {
+.visual-separator {
     height: 79%;
     width: 1.5px;
     background-color: var(--color-olivegreen-4);
