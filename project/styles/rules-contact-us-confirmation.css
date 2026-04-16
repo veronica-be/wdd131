@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 2134/2668;
+    aspect-ratio: 4/5;
     z-index: -1;
     filter: brightness(0.2);
 }
