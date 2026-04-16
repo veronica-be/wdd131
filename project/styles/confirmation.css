@@ -25,6 +25,7 @@ figure.home {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    align-self: center;
 }
 
 #summary-container {
