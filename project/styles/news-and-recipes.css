@@ -83,14 +83,14 @@
     padding: 0 10px 0;
 }
 
-.button {
+.news-and-recipes {
     background-color: var(--color-olivegreen-2) !important;
     margin-top: 1.5rem;
     width: 100%;
 
 }
 
-.button:active {
+.news-and-recipes:active {
     background-color: var(--color-olivegreen-3) !important;
 }
 
