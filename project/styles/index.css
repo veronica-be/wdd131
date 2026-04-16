@@ -3,10 +3,6 @@
     text-align: left;
 }
 
-.olive4 {
-    background-color: var(--color-olivegreen-4);
-}
-
 .product-grid,
 .grid-3 {
     display: grid;
