@@ -39,6 +39,7 @@
 .grid-title-img img {
     width: 100%;
     height: auto;
+    aspect-ratio: 605/429;
     border-top: 4px solid rgb(39, 43, 0, 0.2);
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
