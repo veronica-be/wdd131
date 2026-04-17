@@ -51,6 +51,7 @@ textarea {
     width: 200px;
     height: auto;
     display: block;
+    margin-top: 75px;
     margin: auto;
     aspect-ratio: 959/693;
 }
