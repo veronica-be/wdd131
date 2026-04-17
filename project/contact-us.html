@@ -12,15 +12,14 @@
     <link rel="preload" as="style" href="styles/header-footer.css">
     <link rel="preload" as="style" href="styles/contact-form.css">
     <link rel="preload" as="style" href="styles/rules-and-confirmation.css">
-    <link rel="preload" as="image" href="images/background-form-small.avif" media="(max-width: 420px)"
-        fetchpriority="high">
-    <link rel="preload" as="image" href="images/background-form-mobile.avif" media="(min-width: 421px)"
+
+    <link rel="preload" as="image" href="images/background-form-small.avif" media="(max-width: 836px)"
         fetchpriority="high">
     <link rel="preload" as="image" href="images/background-form-desk.avif" media="(min-width: 837px)"
         fetchpriority="high">
-    <!-- <link rel="preload" as="image" href="images/logo-trazo.svg"> -->
+    <link rel="preload" as="image" href="images/logo-trazo.svg">
 
-    <!-- <link rel="preload" href="scripts/contact-us.js" as="script"> -->
+    <link rel="preload" href="scripts/contact-us.js" as="script">
 
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/contact-us.js" defer></script>
@@ -58,10 +57,9 @@
     <main>
         <section class="form-box-bg">
             <picture>
-                <source media="(max-width: 420px)" srcset="images/background-form-small.avif">
-                <source class="hero-bg" media=" (max-width: 837px)" srcset="images/background-form-mobile.avif">
-                <img class="form-bg" fetchpriority="high" width="2134" height="2668" decoding="sync"
-                    src="images/background-form-desk.avif" alt="image of background of cocoa powder">
+                <source media="(min-width: 837px)" srcset="images/background-form-desk.avif" width="2134" height="2668">
+                <img class="form-bg" fetchpriority="high" width="900" height="1125" decoding="sync"
+                    src="images/background-form-small.avif" alt="image of background of cocoa powder">
             </picture>
             <div>
                 <div class="confirmation-txt">
