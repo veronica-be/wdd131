@@ -72,12 +72,15 @@
 .img-floated-left {
     float: left;
     width: 30%;
+    height: auto;
     margin: 1.5% 2rem 1rem 10%;
 }
 
 .img-floated-left img {
     width: 100%;
     height: auto;
+    aspect-ratio: 675/900;
+    object-fit: cover;
 }
 
 .card-grid {
@@ -115,7 +118,7 @@
     .img-floated-left {
         padding: 0;
         margin-top: 0;
-        width: 150px;
+        width: 20%;
     }
 
     .card-grid {
