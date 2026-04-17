@@ -61,64 +61,68 @@
                 <img class="form-bg" fetchpriority="high" width="900" height="1125" decoding="sync"
                     src="images/background-form-mobile.avif" alt="image of background of cocoa powder">
             </picture>
-            <div class="confirmation-txt">
-                <img class="logo-main" src="images/avoranti-yellow-big.svg" width="959" height="693"
-                    alt="Avoranti's logo of cacao" fetchpriority="high">
-                <div class=" h-center-line vertical-2rem">
-                    <h1>Get in Touch with Avoranti</h1>
-                    <div class="olive1"></div>
-                </div>
-                <h2>How can we help you?</h2>
-                <p>At Avoranti, we value every interaction. Whether you have a technical question, a product review, or
-                    a
-                    concern regarding our service, we are committed to listening and improving for you.</p>
-                <p>Please fill out the form below and our team will contact you shortly.</p>
-                <p><strong><em>* Required fields</em></strong></p>
-            </div>
-            <div class="form-box">
-                <form id="contactUs" method="get" action="confirmation.html">
-                    <label for="reason">Reason for contact *</label>
-                    <select id="reason" name="reason" required>
-                        <option value="" disabled selected>Please select a reason</option>
-                        <option value="General Question">General Question</option>
-                        <option value="Product Review">Product
-                            Review</option>
-                        <option value="Claim">Submit a Claim</option>
-                    </select>
-
-                    <label for="topic">Subject *</label>
-                    <select id="topic" name="topic" disabled
-                        aria-label="Select a specific reason first before selecting a subject" required>
-                        <option value="" disabled selected>Please select a reason first</option>
-                    </select>
-
-                    <label for="message">Type here your message *</label>
-                    <textarea id="message" name="review" rows="8" placeholder="Type here..." required></textarea>
-
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-
-                    <label for="last-name">Last names <em>(Optional)</em></label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Last names">
-
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
-
-                    <label for="tel">Telephone number *</label>
-                    <input type="tel" id="tel" name="tel" placeholder="+52 000 000 0000" required>
-
-
-                    <div class="confirm">
-                        <input type="checkbox" id="accept-terms" name="terms" required>
-                        <label for="accept-terms">Confirm that you have read and understood our website Terms of Use and
-                            Privacy
-                            Policy.
-                            *</label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
+            <div>
+                <div class="confirmation-txt">
+                    <img class="logo-main" src="images/avoranti-yellow-big.svg" width="959" height="693"
+                        alt="Avoranti's logo of cacao" fetchpriority="high">
+                    <div class=" h-center-line vertical-2rem">
+                        <h1>Get in Touch with Avoranti</h1>
+                        <div class="olive1"></div>
                     </div>
+                    <h2>How can we help you?</h2>
+                    <p>At Avoranti, we value every interaction. Whether you have a technical question, a product review,
+                        or
+                        a
+                        concern regarding our service, we are committed to listening and improving for you.</p>
+                    <p>Please fill out the form below and our team will contact you shortly.</p>
+                    <p><strong><em>* Required fields</em></strong></p>
+                </div>
+                <div class="form-box">
+                    <form id="contactUs" method="get" action="confirmation.html">
+                        <label for="reason">Reason for contact *</label>
+                        <select id="reason" name="reason" required>
+                            <option value="" disabled selected>Please select a reason</option>
+                            <option value="General Question">General Question</option>
+                            <option value="Product Review">Product
+                                Review</option>
+                            <option value="Claim">Submit a Claim</option>
+                        </select>
 
-                    <input class="button general-style-button" type="submit" value="SUBMIT MESSAGE">
+                        <label for="topic">Subject *</label>
+                        <select id="topic" name="topic" disabled
+                            aria-label="Select a specific reason first before selecting a subject" required>
+                            <option value="" disabled selected>Please select a reason first</option>
+                        </select>
 
-                </form>
+                        <label for="message">Type here your message *</label>
+                        <textarea id="message" name="review" rows="8" placeholder="Type here..." required></textarea>
+
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+
+                        <label for="last-name">Last names <em>(Optional)</em></label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last names">
+
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                        <label for="tel">Telephone number *</label>
+                        <input type="tel" id="tel" name="tel" placeholder="+52 000 000 0000" required>
+
+
+                        <div class="confirm">
+                            <input type="checkbox" id="accept-terms" name="terms" required>
+                            <label for="accept-terms">Confirm that you have read and understood our website Terms of Use
+                                and
+                                Privacy
+                                Policy.
+                                *</label><!-- Well of course right now it doesn't guide you to those terms or policy is something to make it more credible. -->
+                        </div>
+
+                        <input class="button general-style-button" type="submit" value="SUBMIT MESSAGE">
+
+                    </form>
+                </div>
             </div>
         </section>
     </main>
