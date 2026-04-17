@@ -43,7 +43,7 @@ textarea {
     color: var(--color-olivegreen-1) !important;
 }
 
-.confirmation-txt {
+.confirmation-txt p {
     margin-bottom: 1rem;
 }
 
@@ -56,9 +56,9 @@ textarea {
     aspect-ratio: 959/693;
 }
 
-.h-center-line {
+.vertical-2rem {
+    margin-bottom: 2rem;
     margin-top: 2rem !important;
-    letter-spacing: 0.1rem;
 }
 
 .button {
@@ -70,7 +70,7 @@ textarea {
         width: 20%;
     }
 
-    .confirmation-txt {
+    .confirmation-txt p {
         margin-left: 10%;
         margin-right: 10%;
     }
