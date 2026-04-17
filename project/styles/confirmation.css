@@ -33,7 +33,7 @@ figure.home {
     font-family: 'Platfair Display';
 }
 
-.button {
+.confirm-button {
     width: 50%;
     margin: 20px auto auto auto;
 }
@@ -47,7 +47,7 @@ a:hover {
 }
 
 @media (min-width: 837px) {
-    .button {
+    .confirm-button {
         width: 30%;
     }
 
